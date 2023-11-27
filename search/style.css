@@ -1,6 +1,41 @@
 a{
     font-size: 2rem;
 }
+a:hover{
+    color: #551A8B;
+}
+
+.javascript{
+    color: #EAFF67;
+}
+
+.css{
+    color: #7CA5F5;
+}
+
+.html{
+    color: #EE7F2F;
+}
+
+.php{
+    color: #9FC4FB;
+}
+
+.modelagem{
+    color: #92A2D9;
+}
+
+.sql{
+    color: #2555FF;
+}
+
+.java{
+    color: #EA2D2E;
+}
+
+.python{
+    color: #FFCF25;
+}
 
 .search-itens{
     grid-template-columns: 100%;

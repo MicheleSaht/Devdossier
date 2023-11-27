@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introdução ao Python</title>
+    <link rel="stylesheet" href="linguagem.css">
 </head>
 <body>
     <header>

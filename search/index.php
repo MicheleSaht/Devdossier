@@ -53,13 +53,12 @@ $result = mysqli_query($conn, $sql);
 if(mysqli_num_rows($result) > 0) {
     while($row = mysqli_fetch_assoc($result)) {
         $img = $row['TYPE'];
-        $color = $row['COLOR'];
         $type = strtoupper($row['TYPE']);
         $title = $row['TITLE_REAL'];
         
         echo "<div class='search-item'>
         <img src='../img/$img.svg' alt='#' />
-        <a style='color: #$color; ' onmouseover='this.style.color=".'"#551A8B"'."' onmouseout='this.style.color=".'"#'.$color.'"'."' href=''>$title | $type</a>
+        <a class='$img' href=''>$title | $type</a>
     </div>";
     }
 } else {
