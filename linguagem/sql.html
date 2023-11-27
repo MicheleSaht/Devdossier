@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao SQL</title>
+    <link rel="stylesheet" href="./linguagem.css">
+</head>
+
+<body>
+
+    <h1>Introdução</h1>
+
+    <p>SQL (Structured Query Language) é uma linguagem de programação usada para gerenciar e manipular bancos de dados relacionais. Em relação aos sites WordPress, SQL desempenha um papel vital no mundo da tecnologia. Ele é responsável por armazenar e administrar
+        informações essenciais, como postagens, dados de usuários, detalhes de plugins e muito mais.</p>
+
+    <p>SQL organiza essas informações em tabelas separadas e estabelece conexões entre elas usando chaves, o que lhe confere a denominação de sistema relacional de gerenciamento de banco de dados. Essa abordagem organizada é crucial para manter a integridade
+        e a eficiência dos dados, garantindo que as informações possam ser acessadas de maneira consistente e precisa.</p>
+
+    <p>Quando um site WordPress precisa acessar ou modificar esses dados, ele envia solicitações ao servidor do banco de dados utilizando SQL. Essas solicitações são formuladas em SQL, uma linguagem padrão amplamente reconhecida para interagir com sistemas
+        de gerenciamento de banco de dados. Essa interação segue o modelo cliente-servidor, em que o WordPress age como o cliente que solicita e manipula os dados, enquanto o servidor de banco de dados funciona como o servidor que atende a essas solicitações,
+        realizando operações de leitura, gravação e manutenção dos dados de maneira eficaz e segura.</p>
+
+    <h1>Como Instalar:</h1>
+
+    <p>O primeiro passo é instalar o WampServer, que é um pacote de software gratuito e de código aberto.</p>
+
+    <p>Comece acessando o site do WampServer: <a href="https://www.wampserver.com/" target="_blank">https://www.wampserver.com/</a></p>
+
+    <p>No início, você encontrará opções para download. Escolha a versão mais recente disponível para o seu sistema.</p>
+
+    <p><strong>Após a instalação:</strong></p>
+
+    <p>O segundo passo é localizar o ícone do WampServer que está na barra de tarefas. Em seguida, clique no ícone para iniciar.</p>
+
+    <p>O ícone ficará verde quando o servidor estiver em execução, se ele ficar laranja ou vermelho deve estar acontecendo algum tipo de problema.</p>
+
+    <p>Depois você vai precisar de uma ferramenta chamada "cliente SQL". Uma opção comum é o phpMyAdmin, que já vem com o WampServer.</p>
+
+    <p><strong>Para instalar o MySQL Workbench:</strong></p>
+
+    <p>O site de download do Workbench: <a href="https://dev.mysql.com/downloads/workbench/" target="_blank">https://dev.mysql.com/downloads/workbench/</a></p>
+
+    <p>Na página de downloads, você encontrará diferentes versões para diferentes sistemas operacionais.</p>
+
+    <h2>Configuração inicial do SQL:</h2>
+
+    <p>A preparação inicial do SQL compreende uma série de procedimentos, como a instalação, a definição de uma senha para o usuário "root", a configuração do arquivo de configuração, o início do servidor, a criação de bancos de dados e contas de usuário,
+        a implementação de medidas de segurança, a realização de testes de conectividade e o estabelecimento de um plano regular de backup. Estas etapas são cruciais para adequar o SQL às exigências particulares do ambiente e da aplicação em questão.</p>
+
+    <h2>Subconjuntos:</h2>
+
+    <p><strong>DQL (Data Query Language):</strong> Aqui, você busca informações do banco de dados. O comando principal é o SELECT, usado para pegar dados de tabelas. Outros comandos, como ORDER BY para organizar dados, GROUP BY para agrupá-los e JOIN para
+        combinar dados, também podem ser úteis.</p>
+
+    <p><strong>DML (Data Manipulation Language):</strong> Agora, mudando para a manipulação de dados no banco de dados. As ações principais incluem "INSERT" para adicionar novos dados, "UPDATE" para modificar informações existentes e "DELETE" para remover
+        registros.
+    </p>
+
+    <p><strong>DDL (Data Definition Language):</strong> Isso é mais sobre a construção da estrutura do banco de dados. Comandos como "CREATE" para criar tabelas, "ALTER" para fazer modificações e "DROP" para eliminar elementos.</p>
+
+    <p><strong>DCL (Data Control Language):</strong> Agora, falando de controle de acesso e segurança no banco de dados. "GRANT" concede permissões, enquanto "REVOKE" as revoga.</p>
+
+    <p><strong>TCL (Transaction Control Language):</strong> Por fim, o controle de transações no banco de dados. "COMMIT" sela uma tarefa como concluída, enquanto "ROLLBACK" é seu botão de desfazer caso algo dê errado.</p>
+
+
+
+    <h1>Gerenciamento de Variáveis de Configuração e Estrutura de Tabelas no SQL</h1>
+
+    <h2>Gerenciamento de Configurações</h2>
+    <p>Gerenciar SQL significa ajustar como o banco de dados funciona, envolvendo várias etapas. Isso inclui mexer em um arquivo especial que controla o funcionamento do banco de dados ou usar comandos SQL, como SET GLOBAL ou SET SESSION, para fazer mudanças
+        temporárias sem reiniciar o banco de dados.</p>
+    <p>Após mexer no arquivo de configuração, pode ser necessário reiniciar o banco de dados para que as mudanças funcionem. É crucial testar as mudanças para garantir que não causam problemas de velocidade ou segurança. Manter um registro das mudanças é
+        fundamental para entender como o banco de dados foi configurado ao longo do tempo.</p>
+    <p>A segurança é uma preocupação ao fazer ajustes para garantir que o banco de dados esteja seguro contra ameaças e riscos.</p>
+
+    <h2>Modelagem de Dados</h2>
+    <p>A modelagem de dados é crucial e envolve planejar como os dados são organizados em tabelas, como se relacionam e garantir que as informações sejam armazenadas e recuperadas de maneira eficiente.</p>
+
+    <h2>Estrutura de Tabelas no SQL</h2>
+    <p>Ao criar uma tabela no SQL, considere vários elementos:</p>
+    <ul>
+        <li>Nome da tabela que representa o recipiente dos dados.</li>
+        <li>Definição das colunas que armazenarão informações específicas.</li>
+        <li>Designação de uma chave primária para identificar cada linha de forma única.</li>
+        <li>Criação de índices para acelerar as buscas.</li>
+        <li>Implementação de regras para garantir a integridade dos dados.</li>
+        <li>Definição de valores padrão quando nenhum valor é especificado.</li>
+        <li>Inclusão de comentários para descrever o propósito da tabela.</li>
+        <li>Aplicação de opções de armazenamento para economizar espaço e otimizar o desempenho.</li>
+    </ul>
+    <p>Esses elementos são fundamentais para organizar e armazenar os dados eficientemente no banco de dados, independentemente do sistema de gerenciamento de banco de dados específico, como o MySQL.</p>
+
+    <h2>Chaves Primárias e Estrangeiras</h2>
+    <p>A chave primária é uma coluna que identifica cada linha de forma única, evitando informações repetidas na tabela e facilitando a ligação com outras tabelas por meio de chaves estrangeiras.</p>
+    <p>A chave estrangeira é outra coluna que está ligada com a chave primária de outra tabela, permitindo juntar informações de tabelas diferentes e garantindo a integridade referencial.</p>
+
+    <h2>Tipos de Dados Suportados pelo SQL</h2>
+    <p>O SQL suporta diversos tipos de dados para armazenar informações no banco de dados, como números inteiros, números com casas decimais, strings, datas e horários, valores lógicos, dados binários, escolhas pré-definidas, informações especiais e o formato
+        de texto conhecido como JSON. A escolha do tipo de dados depende das necessidades específicas do banco de dados.</p>
+
+    <h2>Consultas SQL</h2>
+    <h3>Comandos SQL Básicos:</h3>
+    <ul>
+        <li><strong>SELECT:</strong> Usado para recuperar dados de uma tabela.</li>
+        <li><strong>INSERT:</strong> Usado para adicionar novos registros a uma tabela.</li>
+        <li><strong>UPDATE:</strong> Usado para atualizar registros existentes em uma tabela.</li>
+        <li><strong>DELETE:</strong> Usado para remover registros de uma tabela.</li>
+    </ul>
+
+    <h1>Consultas Avançadas em SQL</h1>
+
+    <h2>Operadores de Junção (JOINs)</h2>
+    <ul>
+        <li><strong>INNER JOIN:</strong> Retorna apenas os registros que têm correspondências em ambas as tabelas.</li>
+        <li><strong>LEFT JOIN:</strong> Retorna todos os registros da tabela à esquerda e os correspondentes da tabela à direita.</li>
+    </ul>
+
+    <h2>Subconsultas</h2>
+    <ul>
+        <li><strong>IN:</strong> Usado para combinar dados de várias tabelas com base em colunas relacionadas.</li>
+        <li><strong>Subconsulta de Tabela:</strong> Retorna várias linhas.</li>
+    </ul>
+
+    <h2>Agrupamento</h2>
+    <p>Usado para agrupar registros com base em valores comuns.</p>
+
+    <h2>Funções de Agregação</h2>
+    <ul>
+        <li><strong>SUM:</strong> Soma os valores em uma coluna.</li>
+        <li><strong>AVG:</strong> Calcula a média dos valores em uma coluna.</li>
+    </ul>
+
+    <h2>Restrição de Dados</h2>
+    <p>Define restrições para controlar quais dados podem ser inseridos ou modificados em uma tabela.</p>
+
+    <h2>Condições de Comparação e Lógicas</h2>
+    <p>Usadas para filtrar dados com base em critérios específicos.</p>
+
+    <h2>Cláusulas</h2>
+    <p>Elementos que refinam uma consulta, como a cláusula WHERE para filtrar dados.</p>
+
+    <h2>INSERT INTO</h2>
+    <p>Uma forma específica de inserir dados em uma tabela.</p>
+
+</body>
+
+</html>
