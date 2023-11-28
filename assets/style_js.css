@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1E1E1E;
+    color: white;
+    width: 100%;
+    height: 100vw;
+}
+
+/* JAVASCRIPT */
+.title.js {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.subtitle.js {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+.content-js{
+    width: 500px;
+    height: 500px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 1.5px;
+}
+.item-py a {
+    color: #fff;
+}
+.list-py-func {
+    list-style: none;
+}
+
+.item-py-func h2 {
+    padding-bottom: 10px;
+}
+.list-py-var {
+    list-style: decimal;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+.content-list-py-var {
+    padding-left: 20px;
+}
+.subtitle.js.str {
+    padding-bottom: 5px;
+    text-align: left;
+    padding-left: 10px;
+}
+.content-list-js-str {
+    padding-left: 70px;
+}
+h4 {
+    font-weight: 300;
+}
+.content-list-js-mts, .content-list-js-num, .content-list-js-ev, .content-list-js-rep, .content-list-js-con, .content-list-js-glo, .content-list-js-json, .content-list-js-math, .content-list-js-obj {
+    padding: 10px 0px;
+    padding-left: 20px;
+}
+.list-js-mts {
+    padding-left: 50px;
+}
+.list-js-num, .list-js-ev, .list-js-rep, .list-js-con, .list-js-glo, .list-js-json, .list-js-math{
+    list-style: decimal;
+    padding-left: 50px;
+}
+.list-js-math li{
+    padding-bottom: 9px;
+}
