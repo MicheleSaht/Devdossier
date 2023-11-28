@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Montserrat:wght@100&family=Poppins:wght@100&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -22,6 +23,8 @@ header {
 }
 
 .header-circle {
+    /* ?deixo com ou sem? */
+    /* ?box-shadow: rgba(0, 0, 0, 0.053) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
     width: 100%;
     height: 90vh;
     border-radius: 27%;
@@ -45,7 +48,9 @@ nav {
 .nav-menu {
     width: 32px;
     height: 32px;
-    background-color: #ffffff;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
     z-index: 1;
 }
 
@@ -75,7 +80,19 @@ input:hover {
     font-size: 14px;
     border-radius: 10px;
     /* Opção d e estilo rs */
-    /* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+    box-shadow: rgba(0, 0, 0, 0.12) 0px -23px 25px 0px inset, rgba(100, 100, 100, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    transition: 1s;
+}
+
+#search-box:hover {
+    box-shadow: rgba(0, 0, 0, 0.20) 0px -23px 25px 0px inset, rgba(100, 100, 100, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+#search-button {
+    display: flex;
+    background-color: #1e1e1e00;
+    justify-content: center;
+    align-items: center;
 }
 
 #search-box::placeholder {
@@ -88,7 +105,6 @@ input:hover {
     font-size: 14px;
     border-radius: 20px;
     margin-left: 10px;
-    background-color: #877a7a;
     position: absolute;
     top: 50%;
     left: 0;
@@ -109,6 +125,10 @@ input:hover {
     text-align: center;
     font-size: 14pt;
     text-decoration: none;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
 }
 
 
@@ -143,7 +163,7 @@ main {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     height: 150px;
     position: relative;
     border-radius: 15px;
@@ -161,14 +181,14 @@ main {
 }
 
 .container-item img {
-    height: 90px;
+    height: 120px;
     object-fit: fill;
     position: absolute;
     top: -30px;
 }
 
 .container-item img:hover {
-    height: 90px;
+    height: 110px;
     top: -25px;
 }
 
@@ -177,6 +197,42 @@ main {
     text-align: center;
 }
 
+<<<<<<< HEAD
 .container-itens a {
     text-decoration: none;
+=======
+a {
+    text-decoration: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #383737;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+}
+
+
+/* liink */
+
+footer a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    /* !não modifique a margin */
+}
+
+
+/* Estilo para hover nos links */
+
+footer a:hover {
+    text-decoration: underline;
+    /* Adicionei um sublinhado ao passar o mouse sobre os links */
+>>>>>>> origin/branch-michele
 }

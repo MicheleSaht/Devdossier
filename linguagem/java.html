@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="linguagem.css">
+
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Informações sobre Java</title>
+    </head>
+
+    <body>
+        <!-- !color java: #0074BD -->
+        <main>
+
+            <img src="../img/Java.svg" alt="">
+            <header>
+                <h1>Java - Linguagem de Programação</h1>
+            </header>
+            <section>
+                <p>Java é uma linguagem de programação de alto nível amplamente utilizada para desenvolver aplicativos e sistemas de software. Ela é conhecida por ser portátil, o que significa que os programas Java podem ser executados em diferentes plataformas
+                    sem a necessidade de modificação. Isso é possível devido ao uso de uma máquina virtual Java (JVM), que interpreta o código Java. Java é fortemente orientada a objetos e possui uma biblioteca padrão rica que fornece recursos para uma
+                    ampla variedade de tarefas de programação.</p>
+            </section>
+
+
+            <header>
+                <h1>Declaração de Variáveis em Java</h1>
+            </header>
+            <section>
+                <h2>Tipos Primitivos em Java</h2>
+                <p>Em Java, os tipos primitivos representam dados simples. Alguns dos tipos primitivos comuns incluem:</p>
+                <ul>
+                    <li><strong>int:</strong> Representa números inteiros.</li>
+                    <li><strong>double:</strong> Representa números de ponto flutuante de precisão dupla.</li>
+                    <li><strong>float:</strong> Também representa números de ponto flutuante, mas com precisão simples.</li>
+                    <li><strong>char:</strong> Representa caracteres individuais.</li>
+                    <li><strong>boolean:</strong> Representa valores lógicos, verdadeiro ou falso.</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Declaração de Variáveis em Java</h2>
+                <p>Além dos tipos primitivos, Java permite a declaração de variáveis de objetos, que são instâncias de classes personalizadas ou da biblioteca padrão. Exemplo:</p>
+                <pre>
+            <code>
+                // Declaração de variável do tipo int
+                int numeroInteiro = 42;
+
+
+                // Declaração de variável do tipo double
+                double numeroDecimal = 3.14;
+
+
+                // Declaração de variável do tipo char
+                char caractere = 'A';
+
+
+                // Declaração de variável do tipo boolean
+                boolean verdadeiroOuFalso = true;
+
+
+                // Declaração de variável de objeto
+                MinhaClasse objetoPersonalizado = new MinhaClasse();
+            </code>
+        </pre>
+            </section>
+
+
+            <header>
+                <h1>Entrada e Saída em Java</h1>
+            </header>
+            <section>
+                <h2>Classe Scanner</h2>
+                <p>O uso da classe Scanner em Java permite a entrada de dados a partir do teclado ou de outras fontes. Esta classe pode ser usada para armazenar dados inseridos em variáveis, facilitando a manipulação desses dados dentro do programa. Exemplo:</p>
+                <pre>
+            <code>
+                import java.util.Scanner;
+
+
+                public class EntradaDeDados {
+                    public static void main(String[] args) {
+                        // Criando um objeto Scanner para ler dados do teclado
+                        Scanner scanner = new Scanner(System.in);
+
+
+                        // Solicitando e lendo um número inteiro
+                        System.out.print("Digite um número inteiro: ");
+                        int numeroInteiro = scanner.nextInt();
+
+
+                        // Exibindo o número inserido
+                        System.out.println("Você digitou: " + numeroInteiro);
+
+
+                        // Fechando o scanner
+                        scanner.close();
+                    }
+                }
+            </code>
+        </pre>
+            </section>
+            <section>
+                <h2>Manipulação de Strings em Java</h2>
+                <p>As strings em Java são objetos da classe String, que oferece diversos métodos úteis para manipular e processar cadeias de caracteres. Exemplo:</p>
+                <pre>
+            <code>
+                public class ManipulacaoDeStrings {
+                    public static void main(String[] args) {
+                        // Exemplo de manipulação de strings
+                        String texto = "Olá, mundo!";
+
+
+                        // Obtendo o tamanho da string
+                        int tamanho = texto.length();
+                        System.out.println("Tamanho da string: " + tamanho);
+
+
+                        // Obtendo o caractere na posição 4
+                        char quartoCaractere = texto.charAt(3);
+                        System.out.println("Quarto caractere: " + quartoCaractere);
+
+
+                        // Extraindo parte da string (substring)
+                        String parte = texto.substring(0, 5);
+                        System.out.println("Parte da string: " + parte);
+                    }
+                }
+            </code>
+        </pre>
+            </section>
+
+            <header>
+                <h1>Operadores em Java</h1>
+            </header>
+            <section>
+                <h2>Operadores Aritméticos</h2>
+                <p>Java oferece operadores aritméticos para realizar cálculos:</p>
+                <ul>
+                    <li><strong>+</strong>: Adição</li>
+                    <li><strong>-</strong>: Subtração</li>
+                    <li><strong>*</strong>: Multiplicação</li>
+                    <li><strong>/</strong>: Divisão</li>
+                    <li><strong>%</strong>: Módulo (resto da divisão)</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Operadores de Comparação</h2>
+                <p>Operadores de comparação são usados para comparar valores:</p>
+                <ul>
+                    <li><strong>==</strong>: Igual a</li>
+                    <li><strong>!=</strong>: Diferente de</li>
+                    <li><strong>&lt;</strong>: Menor que</li>
+                    <li><strong>&gt;</strong>: Maior que</li>
+                    <li><strong>&lt;=</strong>: Menor ou igual a</li>
+                    <li><strong>&gt;=</strong>: Maior ou igual a</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Operadores Lógicos</h2>
+                <p>Operadores lógicos são usados para avaliar expressões lógicas:</p>
+                <ul>
+                    <li><strong>&amp;&amp;</strong>: AND lógico</li>
+                    <li><strong>||</strong>: OR lógico</li>
+                    <li><strong>!</strong>: NOT lógico</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Operadores de Atribuição</h2>
+                <p>Operadores de atribuição são usados para atribuir valores a variáveis:</p>
+                <ul>
+                    <li><strong>+=</strong>: Adição e atribuição</li>
+                    <li><strong>-=</strong>: Subtração e atribuição</li>
+                    <li><strong>*=</strong>: Multiplicação e atribuição</li>
+                    <li><strong>/=</strong>: Divisão e atribuição</li>
+                    <li><strong>%=</strong>: Módulo e atribuição</li>
+                </ul>
+            </section>
+
+
+            <header>
+                <h1>Estruturas em Java</h1>
+            </header>
+            <section>
+                <h2>Estrutura de Repetição</h2>
+                <p>As estruturas de repetição em Java, como o loop for, while e do-while, permitem a execução repetida de um bloco de código com base em uma condição. Exemplo:</p>
+                <pre>
+            <code>
+                public class EstruturaRepeticao {
+                    public static void main(String[] args) {
+                        // Exemplo de loop for
+                        for (int i = 0; i < 5; i++) {
+                            System.out.println("Iteração " + i);
+                        }
+
+
+                        // Exemplo de loop while
+                        int contador = 0;
+                        while (contador < 5) {
+                            System.out.println("Contador: " + contador);
+                            contador++;
+                        }
+
+
+                        // Exemplo de loop do-while
+                        int j = 0;
+                        do {
+                            System.out.println("Valor de j: " + j);
+                            j++;
+                        } while (j < 5);
+                    }
+                }
+            </code>
+        </pre>
+            </section>
+            <section>
+                <h2>Condições em Java</h2>
+                <p>As estruturas condicionais, como if, else, else if e switch-case, permitem que um programa tome decisões com base em condições específicas. Exemplo:</p>
+                <pre>
+            <code>
+                public class EstruturaCondicao {
+                    public static void main(String[] args) {
+                        int numero = 10;
+
+
+                        // Exemplo de if-else
+                        if (numero > 0) {
+                            System.out.println("O número é positivo.");
+                        } else {
+                            System.out.println("O número é não positivo.");
+                        }
+
+
+                        // Exemplo de switch-case
+                        switch (numero) {
+                            case 0:
+                                System.out.println("O número é zero.");
+                                break;
+                            case 10:
+                                System.out.println("O número é dez.");
+                                break;
+                            default:
+                                System.out.println("O número não é zero nem dez.");
+                        }
+                    }
+                }
+            </code>
+        </pre>
+            </section>
+            <section>
+                <h2>Matriz em Java</h2>
+                <p>Matrizes em Java são estruturas de dados que permitem armazenar coleções de elementos em uma grade bidimensional. Exemplo:</p>
+                <pre>
+            <code>
+                public class MatrizExemplo {
+                    public static void main(String[] args) {
+                        // Exemplo de declaração e inicialização de matriz
+                        int[][] matriz = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+
+
+                        // Acessando elementos da matriz
+                        int elemento = matriz[1][2];
+                        System.out.println("Elemento na linha 1, coluna 2: " + elemento);
+                    }
+                }
+            </code>
+        </pre>
+            </section>
+            <header>
+                <h1>Arrays e Orientação a Objetos em Java</h1>
+            </header>
+            <section>
+                <h2>Arrays em Java</h2>
+                <p>Arrays em Java permitem armazenar coleções de elementos do mesmo tipo em uma única dimensão. Exemplo:</p>
+                <pre>
+            <code>
+                public class ArraysExemplo {
+                    public static void main(String[] args) {
+                        // Exemplo de declaração e inicialização de um array
+                        int[] numeros = {1, 2, 3, 4, 5};
+
+
+                        // Acessando elementos do array
+                        int elemento = numeros[2];
+                        System.out.println("Elemento na posição 2: " + elemento);
+                    }
+                }
+                
+            </code>
+        </pre>
+            </section>
+            <section>
+                <h2>Orientação a Objetos em Java</h2>
+                <p>A orientação a objetos em Java é um paradigma de programação em que os programas são construídos em torno de objetos, que são instâncias de classes. Exemplo:</p>
+                <pre>
+            <code>
+                // Exemplo de definição de classe
+                public class Carro {
+                    // Atributos
+                    String modelo;
+                    String cor;
+                    int ano;
+
+
+                    // Método construtor
+                    public Carro(String modelo, String cor, int ano) {
+                        this.modelo = modelo;
+                        this.cor = cor;
+                        this.ano = ano;
+                    }
+
+
+                    // Outros métodos
+                    public void ligar() {
+                        System.out.println("O carro está ligado.");
+                    }
+                }
+
+
+                // Exemplo de criação de objeto
+                public class Main {
+                    public static void main(String[] args) {
+                        // Criando um objeto Carro
+                        Carro meuCarro = new Carro("Fusca", "Azul", 1970);
+
+
+                        // Chamando métodos do objeto
+                        meuCarro.ligar();
+                    }
+                }
+            </code>
+        </pre>
+            </section>
+            <section>
+                <h2>Conclusão</h2>
+                <p>Estas são algumas das principais características de arrays e orientação a objetos em Java. Esses conceitos são fundamentais para desenvolver programas mais estruturados e reutilizáveis.</p>
+            </section>
+
+
+            <header>
+                <h1>Orientação a Objetos em Java</h1>
+            </header>
+            <section>
+                <h2>Instanciar uma Classe em Java</h2>
+                <p>Para instanciar uma classe em Java, utilize a palavra-chave <code>new</code> seguida pelo nome da classe e, se necessário, argumentos para o construtor. Exemplo:</p>
+                <pre>
+            <code>
+                // Instanciando a classe Carro
+                Carro meuCarro = new Carro("Fusca", "Azul", 1970);
+            </code>
+        </pre>
+            </section>
+            <section>
+                <h2>Encapsulamento em Java</h2>
+                <p>O encapsulamento em Java envolve ocultar os detalhes internos de uma classe. Exemplo:</p>
+                <pre>
+            <code>
+                // Exemplo de encapsulamento
+                public class Carro {
+                    private String modelo;
+
+
+                    // Método público para acessar o modelo
+                    public String getModelo() {
+                        return modelo;
+                    }
+
+
+                    // Método público para modificar o modelo
+                    public void setModelo(String novoModelo) {
+                        modelo = novoModelo;
+                    }
+                }
+            </code>
+        </pre>
+            </section>
+            <section>
+                <h2>Herança em Java</h2>
+                <p>A herança permite criar novas classes com base em classes existentes. Exemplo:</p>
+                <pre>
+            <code>
+                // Exemplo de herança
+                public class CarroEsportivo extends Carro {
+                    private boolean turbo;
+
+
+                    // Construtor da classe filha
+                    public CarroEsportivo(String modelo, String cor, int ano, boolean turbo) {
+                        super(modelo, cor, ano);
+                        this.turbo = turbo;
+                    }
+                }
+            </code>
+        </pre>
+            </section>
+            <section>
+                <h2>Polimorfismo em Java</h2>
+                <p>O polimorfismo permite tratar objetos de diferentes classes de maneira genérica. Exemplo:</p>
+                <pre>
+            <code>
+                // Exemplo de polimorfismo
+                Carro meuCarro = new CarroEsportivo("Fusca Esportivo", "Vermelho", 2023, true);
+            </code>
+        </pre>
+            </section>
+            <section>
+                <h2>Classes Abstratas e Interfaces em Java</h2>
+                <p>Classes abstratas e interfaces são fundamentais para definir contratos e promover o polimorfismo. Exemplo:</p>
+                <pre>
+            <code>
+                // Exemplo de classe abstrata
+                public abstract class Animal {
+                    // Método abstrato
+                    public abstract void fazerSom();
+                }
+
+
+                // Exemplo de interface
+                public interface Nadador {
+                    // Método na interface
+                    void nadar();
+                }
+            </code>
+        </pre>
+            </section>
+
+        </main>
+    </body>
+
+    </html>
+
+
+
+
+
+</body>
+
+</html>
