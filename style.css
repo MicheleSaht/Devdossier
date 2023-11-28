@@ -2,7 +2,14 @@
     padding: 0;
     margin: 0;
 }
-
+::-webkit-scrollbar {
+    background-color: #1E1E1E;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #7e797e;
+    border: 3px solid #7e797e;
+    border-radius: 10px;
+}
 body {
     font-family: Arial, sans-serif;
     background-color: #1E1E1E;
@@ -168,4 +175,8 @@ main {
 .container-item span {
     font-size: 16pt;
     text-align: center;
+}
+
+.container-itens a {
+    text-decoration: none;
 }
