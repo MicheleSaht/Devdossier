@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introdução ao PHP</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="linguagem.css">
 </head>
 <body>
+    <div class="container">
     <header>
         <h1>Introdução à Linguagem PHP</h1>
     </header>
@@ -551,6 +552,6 @@ if ($conexao->connect_error) {
         </article>
 
     </section>
-
+    </div>
 </body>
 </html>

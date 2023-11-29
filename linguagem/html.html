@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa HTML</title> 
+    <link rel="stylesheet" href="linguagem.css">
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td{
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th{
+            background-color: #f2f2f2;
+        }
+        footer{
+            height: 40px;
+            background: black;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <header>
+        <h1>Estrutura Básica do HTML</h1>
+        <p>A estrutura básica de um documento HTML consiste em vários elementos principais, que incluem o &lt;!DOCTYPE&gt;, &lt;html&gt;, &lt;head&gt; e &lt;body&gt;.</p>
+    </header>
+
+    <section>
+        <h2>Estrutura de um documento HTML</h2>
+        <p>A estrutura completa de um documento HTML envolve diversos elementos, desde a declaração do tipo de documento até o conteúdo visível.</p>
+    </section>
+
+    <section>
+        <h2>Elementos &lt;html&gt;, &lt;head&gt; e &lt;body&gt;</h2>
+        <p>O &lt;html&gt; é a raiz de um documento HTML. Ele envolve todo o conteúdo da página, incluindo o &lt;head&gt; e o &lt;body&gt;. Todo o conteúdo HTML de uma página está contido dentro do &lt;html&gt;, sendo o elemento principal que define o início e o fim do documento.</p>
+        
+        <p>O &lt;head&gt; está localizado dentro do &lt;html&gt; e é usado para conter informações sobre o documento, como metadados, ligações a folhas de estilo (CSS), scripts, a codificação de caracteres e o título da página. Este conteúdo não é visível na página, mas é importante para a configuração e a descrição da página.</p>
+        
+        <p>O &lt;body&gt; também está dentro do &lt;html&gt;. Ele é usado para envolver o conteúdo visível da página, como texto, imagens, links, parágrafos e outros elementos que os visitantes do site veem e interagem. O &lt;body&gt; é a parte principal do documento onde você constrói o conteúdo da página.</p>
+    </section>
+
+    <header>
+        <h1>Comentários em HTML e Tags HTML</h1>
+    </header>
+
+    <section>
+        <h2>Comentários em HTML</h2>
+        <p>Em HTML, os comentários são usados para incluir notas ou descrições que não são visíveis na página da web, mas servem para fornecer informações para os desenvolvedores ou para quem está revisando o código. Comentários em HTML são ignorados pelos navegadores e não afetam a renderização da página. Eles são bons para documentar o código e fazer anotações ou desativar temporariamente partes do código.</p>
+        <p>Exemplo:</p>
+        <pre>
+            <code>
+                <!-- Este é um exemplo de comentário em HTML -->
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h2>Tags HTML</h2>
+        <p>"Etiquetas HTML" são mais referidas como tags HTML.</p>
+        
+        <h3>Tags de cabeçalho &lt;head&gt; (título, meta, link)</h3>
+        
+        <h4>TÍTULO:</h4>
+        <p>Usada para definir o título da página da web. Este título é exibido na barra de título do navegador e é uma parte fundamental do documento HTML.</p>
+        <pre>
+            <code>
+                <head>
+                    <title>Minha Página</title>
+                </head>
+            </code>
+        </pre>
+
+        <h4>META:</h4>
+        <p>É usada para fornecer metadados ou informações sobre o documento HTML que não são diretamente visíveis na página, mas são importantes para a configuração e a interpretação do documento pelos navegadores da web e mecanismos de busca.</p>
+        <pre>
+            <code>
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="description" content="Descrição da minha página">
+                    <!-- Outras meta tags aqui -->
+                </head>
+            </code>
+        </pre>
+
+        <h4>LINK:</h4>
+        <p>É usada para criar ligações a recursos externos, geralmente folhas de estilo (CSS), mas também pode ser usada para outros tipos de ligações, como fontes, ícones, feeds RSS e até mesmo relacionar documentos.</p>
+        <pre>
+            <code>
+                <head>
+                    <link rel="stylesheet" href="estilos.css">
+                    <!-- Outros links aqui -->
+                </head>
+            </code>
+        </pre>
+    </section>
+
+    <header>
+        <h1>Tags HTML</h1>
+    </header>
+
+    <section>
+        <h2>Tags de Parágrafo &lt;p&gt;</h2>
+        <p>É utilizada para definir e estruturar parágrafos de texto em um documento HTML. Cada vez que você deseja criar um novo parágrafo de texto, você envolve o texto desse parágrafo com a tag &lt;p&gt;.</p>
+        <pre>
+            <code>
+                <p>Este é um parágrafo de exemplo.</p>
+                <p>Outro parágrafo aqui.</p>
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h2>Tags de Cabeçalho &lt;h1&gt; a &lt;h6&gt;</h2>
+        <p>As tags de cabeçalho &lt;h1&gt; a &lt;h6&gt; são usadas para criar títulos ou cabeçalhos em HTML. Elas representam uma hierarquia de seis níveis de títulos, onde &lt;h1&gt; é o mais alto em importância e &lt;h6&gt; é o mais baixo.</p>
+        <pre>
+            <code>
+                <h1>Título Principal</h1>
+                <h2>Subtítulo 1</h2>
+                <h3>Subtítulo 2</h3>
+                <h4>Subtítulo 3</h4>
+                <h5>Subtítulo 4</h5>
+                <h6>Subtítulo 5</h6>
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h2>Listas Ordenadas &lt;ol&gt;</h2>
+        <p>Uma lista ordenada é usada quando a ordem dos itens é importante, e os itens são numerados automaticamente.</p>
+        <pre>
+            <code>
+                <ol>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ol>
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h2>Listas Não Ordenadas &lt;ul&gt;</h2>
+        <p>Uma lista não ordenada é usada quando a ordem dos itens não é importante. Os itens são marcados com marcadores, geralmente pontos.</p>
+        <pre>
+            <code>
+                <ul>
+                    <li>Item A</li>
+                    <li>Item B</li>
+                    <li>Item C</li>
+                </ul>
+            </code>
+        </pre>
+    </section>
+
+    <footer>
+        <p>Espero que estas informações sejam úteis!</p>
+    </footer>
+
+    <header>
+        <h1>Listas, Ligações e Imagens em HTML</h1>
+    </header>
+
+    <section>
+        <h2>Listas de Descrição &lt;dl&gt;, &lt;dt&gt;, &lt;dd&gt;</h2>
+        <p>As tags &lt;dl&gt;, &lt;dt&gt;, e &lt;dd&gt; são usadas para criar listas de descrição em HTML. Esse tipo de lista é frequentemente chamado de lista de definição e é útil para estruturar informações em que um termo (ou título) é seguido por uma descrição ou uma definição.</p>
+        <pre>
+            <code>
+                <dl>
+                    <dt>Termo 1</dt>
+                    <dd>Descrição 1</dd>
+
+                    <dt>Termo 2</dt>
+                    <dd>Descrição 2</dd>
+
+                    <dt>Termo 3</dt>
+                    <dd>Descrição 3</dd>
+                </dl>
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h2>Ligações &lt;a&gt;</h2>
+        <p>A tag &lt;a&gt; é usada para criar links (ou hiperlinks) em uma página da web. Os links permitem que os visitantes cliquem em um texto ou elemento para navegar para outra página, recurso ou local na mesma página.</p>
+        <pre>
+            <code>
+                <a href="https://www.exemplo.com">Visite Exemplo.com</a>
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h2>Imagens &lt;img&gt;</h2>
+        <p>A tag &lt;img&gt; é usada para exibir imagens em uma página da web. Ela permite que você insira imagens gráficas, como fotografias, ilustrações, ícones e gráficos, diretamente em seu documento HTML.</p>
+        <pre>
+            <code>
+                <img src="caminho/da/imagem.jpg" alt="Descrição da Imagem">
+            </code>
+        </pre>
+    </section>
+
+    <header>
+        <h1>Tabelas e Formulários em HTML</h1>
+    </header>
+
+    <section>
+        <h2>Tabelas &lt;table&gt;, &lt;tr&gt;, &lt;td&gt;, &lt;th&gt;</h2>
+        <p>As tags &lt;table&gt;, &lt;tr&gt;, &lt;td&gt;, e &lt;th&gt; são usadas em HTML para criar tabelas e organizar dados tabulares em uma página da web.</p>
+        <pre>
+            <code>
+                <table>
+                    <tr>
+                        <th>Cabeçalho 1</th>
+                        <th>Cabeçalho 2</th>
+                    </tr>
+                    <tr>
+                        <td>Dado 1.1</td>
+                        <td>Dado 1.2</td>
+                    </tr>
+                    <tr>
+                        <td>Dado 2.1</td>
+                        <td>Dado 2.2</td>
+                    </tr>
+                </table>
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h2>Formulários &lt;form&gt;, &lt;input&gt;, &lt;textarea&gt;, &lt;button&gt;</h2>
+        <p>Elementos HTML essenciais para criar formulários interativos em uma página da web.</p>
+        <pre>
+            <code style="display: flex; justify-content:flex-start; align-items:flex-start;">
+                <form action="/processar-formulario" method="post" style="display: flex; flex-direction: column; justify-content:flex-start; align-items:flex-start;">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                    
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                    
+                    <button type="submit">Enviar</button>
+                </form>
+            </code>
+        </pre>
+    </section>
+
+    <header>
+        <h1>Formulários em HTML</h1>
+    </header>
+
+    <section>
+        <h2>Elementos de Formulário &lt;form&gt;, &lt;input&gt;, &lt;textarea&gt;, &lt;button&gt;</h2>
+        <p>Elementos usados para criar formulários interativos em uma página da web.</p>
+        <pre>
+            <code style="display: flex; justify-content:flex-start; align-items:flex-start;">
+                <form action="/processar-formulario" method="post" style="display: flex; flex-direction: column; justify-content:flex-start; align-items:flex-start;">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                    
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                    
+                    <button type="submit">Enviar</button>
+                </form>
+            </code>
+        </pre>
+    </section>
+    
+    <header>
+        <h1>Atributos HTML</h1>
+    </header>
+
+    <section>
+        <h2>Atributos de Elemento (src, href, alt)</h2>
+        <p>Atributos usados para configurar e personalizar elementos HTML.</p>
+        <pre>
+            <code>
+                <img src="caminho/da/imagem.jpg" alt="Descrição da Imagem">
+                <a href="https://www.exemplo.com">Visite Exemplo.com</a>
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h2>Atributos Globais (id, class, style)</h2>
+        <p>Atributos que podem ser aplicados a praticamente todas as tags HTML.</p>
+        <pre>
+            <code>
+                <p id="paragrafo-1" class="destaque" style="color: blue;">Este é um parágrafo com ID, classe e estilo.</p>
+                <div id="div-1" class="container" style="border: 1px solid black;">Este é um contêiner com ID, classe e estilo.</div>
+            </code>
+        </pre>
+    </section>
+
+    <header>
+        <h1>Atributos HTML</h1>
+    </header>
+
+    <section>
+        <h2>Atributo "id"</h2>
+        <p>Usado para dar um identificador exclusivo a um elemento HTML em uma página. Frequentemente usado para referenciar o elemento com CSS ou JavaScript.</p>
+        <pre>
+            <code>
+                <p id="paragrafo-destaque">Este é um parágrafo com um ID.</p>
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h2>Atributo "class"</h2>
+        <p>Usado para aplicar uma ou mais classes CSS a um elemento. Permite que você aplique estilos específicos a um grupo de elementos semelhantes.</p>
+        <pre>
+            <code>
+                <p class="destaque">Este é um parágrafo com uma classe.</p>
+                <p class="destaque">Outro parágrafo com a mesma classe.</p>
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h2>Atributo "style"</h2>
+        <p>O atributo "style" permite que você aplique estilos CSS diretamente a um elemento individual. Fornece controle de estilo inline.</p>
+        <pre>
+            <code>
+                <div style="border: 1px solid black; padding: 10px;">Este é um contêiner com estilos inline.</div>
+            </code>
+        </pre>
+    </section>
+
+    <header>
+        <h1>Aninhamento de Elementos HTML</h1>
+    </header>
+
+    <section>
+        <h2>Aninhar Elementos</h2>
+        <p>O aninhamento de elementos em HTML refere-se à prática de colocar um elemento HTML dentro de outro. Isso cria uma hierarquia ou estrutura de elementos dentro de uma página da web. O aninhamento é fundamental para a organização e a formatação correta do conteúdo na web.</p>
+        <p>Aninhar elementos dentro de outros em HTML é uma prática comum para criar estruturas de conteúdo complexas e bem organizadas em uma página da web. Você pode aninhar praticamente qualquer elemento HTML dentro de outro, seguindo uma lógica e mantendo a estrutura correta.</p>
+        <pre>
+            <code>
+                <div>
+                    <h3>Este é um exemplo de aninhamento:</h3>
+                    <p>Um parágrafo aninhado dentro de uma div.</p>
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                    </ul>
+                </div>
+            </code>
+        </pre>
+    </section>
+
+    <header>
+        <h1>HTML Semântico</h1>
+    </header>
+
+    <section>
+        <h2>Elementos Semânticos (&lt;header&gt;, &lt;nav&gt;, &lt;article&gt;)</h2>
+        <p>HTML semântico enfatiza o uso de elementos de maneira significativa e estruturada para tornar o conteúdo compreensível para navegadores e seres humanos.</p>
+        <pre>
+            <code>
+                    <h1>Introdução ao HTML Semântico</h1>
+                    <nav>
+                        <ul>
+                            <li><a href="#section1">Seção 1</a></li>
+                                <h2>Seção 1: Importância do HTML Semântico</h2>
+                                <p>O HTML semântico melhora a acessibilidade, indexação e compreensibilidade por leitores de tela.</p>
+                            
+                            <li><a href="#section2">Seção 2</a></li>
+                                <h2>Seção 2: Elementos Semânticos</h2>
+                                <p>Elementos como &lt;header&gt;, &lt;nav&gt; e &lt;article&gt; fornecem significado e estrutura ao conteúdo.</p>
+                            
+                            <li><a href="#section3">Seção 3</a></li>
+                                <h2>Seção 3: Acessibilidade</h2>
+                                <p>O uso de tags semânticas é crucial para melhorar a acessibilidade, permitindo que todos, independentemente de deficiências, usem a web.</p>
+                        </ul>
+                    </nav>
+            </code>
+        </pre>
+    </section>
+
+    <header>
+        <h1>Metatags, Caracteres, Links e Ancoragens em HTML</h1>
+    </header>
+
+    <section>
+        <h2>Metatags</h2>
+        <p>As meta tags em HTML fornecem informações adicionais sobre uma página da web, sendo importantes para mecanismos de busca e redes sociais.</p>
+        <pre>
+            <code>
+                <meta charset="UTF-8">
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h2>Links e Ancoragens</h2>
+        <p>Links e ancoragens são elementos essenciais para a navegação na web, permitindo a conexão entre páginas, recursos e partes específicas de uma página.</p>
+        
+        <h3>Links Internos</h3>
+        <p>Links internos são usados para navegar para partes específicas da mesma página.</p>
+        <pre>
+            <code>
+                <a href="#secao1">Ir para Seção 1</a>
+            </code>
+        </pre>
+
+        <h3>Links Externos</h3>
+        <p>Links externos são usados para vincular a outras páginas da web ou recursos externos.</p>
+        <pre>
+            <code>
+                <a href="https://www.exemplo.com">Visitar Exemplo.com</a>
+            </code>
+        </pre>
+
+        <h3>Ancoragens Internas</h3>
+        <p>Ancoragens internas permitem criar links que direcionam os visitantes para partes específicas da mesma página da web.</p>
+        <pre>
+            <code>
+                <section id="secao1">
+                    <h4>Seção 1: Conteúdo Específico</h4>
+                    <p>Conteúdo da Seção 1.</p>
+                </section>
+            </code>
+        </pre>
+    </section>
+
+    <header>
+        <h1>Inserção de Imagens em HTML</h1>
+    </header>
+
+    <section>
+        <h2>Inserir Imagens</h2>
+        <p>As imagens são incorporadas em uma página da web usando a tag <code>&lt;img&gt;</code>. Esta tag é um elemento vazio que utiliza atributos para especificar informações sobre a imagem a ser exibida.</p>
+        <h3>Exemplo de Inserção de Imagem</h3>
+        <pre>
+            <code>
+                <img src="caminho/para/sua-imagem.jpg" alt="Descrição da Imagem">
+            </code>
+        </pre>
+        <p>O atributo <code>src</code> especifica o caminho para a imagem, e o atributo <code>alt</code> fornece uma descrição textual importante para acessibilidade e quando a imagem não pode ser carregada.</p>
+    </section>
+    <header>
+        <h1>Tabelas HTML</h1>
+    </header>
+
+    <section>
+        <h2>Criação de Tabelas</h2>
+        <p>As tabelas em HTML permitem organizar dados de forma tabular. A tag principal é <code>&lt;table&gt;</code>.</p>
+
+        <h3>Exemplo de Tabela</h3>
+        <pre>
+            <code>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Cabeçalho 1</th>
+                            <th>Cabeçalho 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Linha 1, Coluna 1</td>
+                            <td>Linha 1, Coluna 2</td>
+                        </tr>
+                        <tr>
+                            <td>Linha 2, Coluna 1</td>
+                            <td>Linha 2, Coluna 2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h2>Cabeçalhos de Coluna e Linha</h2>
+        <p>Usando as tags <code>&lt;th&gt;</code> (cabeçalho de tabela) e os atributos <code>colspan</code> e <code>rowspan</code> para criar cabeçalhos.</p>
+
+        <h3>Exemplo de Cabeçalhos</h3>
+        <pre>
+            <code>
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2">Cabeçalho Mesclado</th>
+                        </tr>
+                        <tr>
+                            <th>Cabeçalho 1</th>
+                            <th>Cabeçalho 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Linha 1, Coluna 1</td>
+                            <td>Linha 1, Coluna 2</td>
+                        </tr>
+                        <tr>
+                            <td>Linha 2, Coluna 1</td>
+                            <td>Linha 2, Coluna 2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h2>Células de Mesclar</h2>
+        <p>Mesclar células em tabelas usando os atributos <code>rowspan</code> e <code>colspan</code>.</p>
+
+        <h3>Exemplo de Mesclagem de Células</h3>
+        <pre>
+            <code>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2">Mesclado Verticalmente</td>
+                            <td colspan="2">Mesclado Horizontalmente</td>
+                        </tr>
+                        <tr>
+                            <td>Linha 1, Coluna 2</td>
+                            <td>Linha 1, Coluna 3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </code>
+        </pre>
+    </section>
+
+    <h2>Formulário de Exemplo</h2>
+    <form action="/processar-formulario" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <br>
+
+        <label>Gênero:</label>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="feminino" name="genero" value="feminino">
+        <label for="feminino">Feminino</label>
+
+        <br>
+
+        <label>Interesses:</label>
+        <input type="checkbox" id="esporte" name="interesses" value="esporte">
+        <label for="esporte">Esporte</label>
+        <input type="checkbox" id="musica" name="interesses" value="musica">
+        <label for="musica">Música</label>
+
+        <br>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea>
+
+        <br>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <h2>Novas Funcionalidades HTML5</h2>
+    <!-- Elemento de Vídeo -->
+    <video width="400" controls>
+        <source src="seu-video.mp4" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+    </video>
+
+    <br>
+
+    <!-- Elemento de Áudio -->
+    <audio controls>
+        <source src="seu-audio.mp3" type="audio/mp3">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <br>
+
+    <!-- Elemento Canvas -->
+    <canvas id="meuCanvas" width="200" height="100" style="border:1px solid #000;"></canvas>
+
+    <br>
+
+    <!-- Geolocalização (Note que este exemplo não funcionará localmente devido a políticas de segurança) -->
+    <button onclick="obterLocalizacao()">Obter Localização</button>
+
+    <script>
+        function obterLocalizacao() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    alert("Latitude: " + position.coords.latitude + "\nLongitude: " + position.coords.longitude);
+                });
+            } else {
+                alert("Geolocalização não é suportada pelo seu navegador.");
+            }
+        }
+    </script>
+
+    <!-- Armazenamento Local -->
+    <script>
+        // Exemplo de uso de localStorage
+        localStorage.setItem("nome", "Exemplo");
+        var nomeArmazenado = localStorage.getItem("nome");
+        console.log("Nome armazenado: " + nomeArmazenado);
+    </script>
+
+    <h2>Formulário HTML5 com Validação</h2>
+    <form action="#" method="post" onsubmit="return validarFormulario()">
+        <!-- Campo de Texto Obrigatório -->
+        <label for="campoObrigatorio">Campo Obrigatório:</label>
+        <input type="text" id="campoObrigatorio" name="campoObrigatorio" required>
+        <br>
+
+        <!-- Campo de E-mail -->
+        <label for="campoEmail">E-mail:</label>
+        <input type="email" id="campoEmail" name="campoEmail" required>
+        <br>
+
+        <!-- Botão de Envio -->
+        <input type="submit" value="Enviar">
+    </form>
+
+    <script>
+        function validarFormulario() {
+            // A validação pode ser feita usando JavaScript aqui
+            // Exemplo simples: Verificar se o campo obrigatório não está vazio
+            var campoObrigatorio = document.getElementById("campoObrigatorio").value;
+            if (campoObrigatorio.trim() === "") {
+                alert("Campo obrigatório não pode estar vazio.");
+                return false; // Impede o envio do formulário
+            }
+
+            // A validação do e-mail é feita automaticamente com o tipo de entrada "email"
+
+            return true; // Permite o envio do formulário
+        }
+    </script>
+
+    <h2>Eventos JavaScript, Incorporação de Multimídia e CSS</h2>
+
+    <!-- Exemplo de evento de clique -->
+    <button id="botaoClique" onclick="exibirMensagem()">Clique aqui</button>
+
+    <!-- Exemplo de incorporação de vídeo -->
+    <video width="320" height="240" controls>
+        <source src="exemplo.mp4" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+    </video>
+
+    <script>
+        // Função JavaScript para manipular o evento de clique
+        function exibirMensagem() {
+            alert("Você clicou no botão!");
+        }
+
+        // Outras lógicas de JavaScript podem ser adicionadas conforme necessário
+    </script>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Meu Site Acessível</h1>
+        <nav>
+            <!-- Seu Menu de Navegação Aqui -->
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <article>
+            <h2>Artigo Principal</h2>
+            <!-- Seu Conteúdo Aqui -->
+        </article>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2023 Meu Site Acessível. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Scripts JavaScript (substitua com seus próprios scripts) -->
+    <script src="script.js"></script>
+</div>
+</body>
+</html>
