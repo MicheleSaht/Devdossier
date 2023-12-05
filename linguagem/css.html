@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="linguagem.css">
+    <title>CSS</title>
+</head>
+<body>
+<div class="container">
+
+        <div class="css-section">
+            <h2>CSS (Cascading Style Sheets)</h2>
+            <p>
+                CSS é uma linguagem utilizada para estilizar elementos HTML em uma página web. Ele define a apresentação e o layout dos elementos.
+                Com CSS, é possível controlar cores, fontes, espaçamentos, tamanhos e posicionamentos dos elementos.
+            </p>
+            <p>
+                Principais conceitos de CSS:
+                <ul>
+                    <li>Seletores: identificam os elementos HTML a serem estilizados</li>
+                    <li>Propriedades: definem o estilo dos elementos selecionados</li>
+                    <li>Valores: são atribuídos às propriedades para modificar a aparência dos elementos</li>
+                    <li>Cascata e herança: determinam como os estilos são aplicados e herdados pelos elementos</li>
+                </ul>
+            </p>
+            
+        </div>
+    
+       
+        <ol>
+            <li>
+                <h3>Seletores e Propriedades:</h3>
+                <p>Seletores de Elementos, Classes, IDs, Propriedades de Estilo.</p>
+
+                <h4>Seletores de Elementos:</h4>
+                <p>Selecionam elementos com base no nome do elemento. 
+                Exemplo: <b><br>p {<br>color: red; <br>} </b><br>Aplica a cor vermelha a todos os parágrafos. </p>
+
+                <h4>Seletores de Classes:</h4> 
+                <p>Selecionam elementos com base no atributo de classe. Exemplo: <br><b>.myClass { <br> color: red;<br>} </b> 
+                <br>Aplica a cor vermelha a todos os elementos com a classe “myClass”.</p>
+
+                
+                <h4>Seletores de IDs:</H4> 
+                <p>Selecionam elementos com base no atributo de ID. Exemplo: <br><b>#myID { <br> color: red; <br> }</b> <br>Aplica a cor vermelha ao elemento com o ID “myID”.</p>
+
+                <h4>Propriedades de Estilo:</h4> 
+                <p>Definem o estilo dos elementos. Exemplo: <br> <b>color, font-size, background, etc </b>.</p>
+            </li>
+            <li>
+                <h3>Modelo de Caixa:</h3>
+                <p>Margens, Bordas, Preenchimentos, Box Model.</p>
+
+                <h4>Margens (Margin):</h4> Espaço em torno de um elemento. Exemplo: <br><b>margin: 10px;.</b></p>
+
+                <h4>Bordas (Border):</h4> Contorno em torno de um elemento. Exemplo: <br><b>border: 1px solid black;.</b></p>
+
+                <h4>Preenchimentos (Padding):</h4> Espaço entre o conteúdo de um elemento e sua borda. Exemplo: <br><b>padding: 10px;.</b></p>
+
+                <h4>Box Model:</h4> Descreve o design e layout. Inclui <b>margin, border, padding, e o conteúdo real.</b></p>
+            </li>
+            <li>
+                <h3>Posicionamento e Layout:</h3>
+                <p>Display <b>(block, inline, inline-block)</b>, Posicionamento <b>(relative, absolute, fixed)</b>, Flexbox, Grid Layout.</p>
+
+                <h4>Display:</h4> <p>Define como um elemento deve ser exibido. Exemplos: <br> <b>block, inline, inline-block.</b></p>
+
+                <h4>Posicionamento:</h4> <p>Define como um elemento é posicionado. Exemplos: <br><b>relative, absolute, fixed.</b></p>
+
+                <h4>Flexbox:</h4> <p>Método de layout para alinhar itens em colunas e linhas. Exemplo: <br><b>display: flex;.</b></p>
+
+                <h4>Grid Layout:</h4> <p>Método de layout para alinhar itens em uma grade. Exemplo: <br><b>display: grid;.</b></p>
+            </li>
+            <li>
+                <h3>Unidades e Valores:</h3>
+                <p>Unidades de Medida (px, em, rem, %, vw, vh), Valores Relativos e Absolutos.</p>
+
+                <h4>Unidades de Medida:</h4> 
+                <p>Define o tamanho de vários aspectos. Exemplos: <br><b>px, em, rem, %, vw, vh.</b></p>
+                <h4>Valores Relativos e Absolutos:</h4>
+                <p><b>em e rem</b> são relativos ao tamanho da fonte, enquanto <b>px e % </b>são valores absolutos.</p>
+            </li>
+            <li>
+                <h3>Cascata e Herança:</h3>
+                <p>Prioridade de Estilos, Herança de Estilos.</p>
+                
+                <h4>Prioridade de Estilos:</h4> <p>Determinada pela especificidade do seletor e pela ordem dos estilos no CSS.</p>
+
+                <h4>Herança de Estilos:</h4> <p>Alguns estilos são herdados pelos elementos filhos de um elemento pai.</p>
+            </li>
+            <li>
+                <h3>Estilização Avançada:</h3>
+                <p>Transformações, Transições, Animações, Gradientes, Sombras, Tipografia.</p>
+
+                <h4>Transformações:</h4> <p>Permite girar, escalar, inclinar ou mover um elemento. Exemplo: <br><b>transform: rotate(20deg);.</b></p>
+
+                <h4>Transições:</h4> <p>Cria uma mudança gradual entre diferentes estados de um elemento. Exemplo: <br><b>transition: all 2s;.</b></p>
+
+                <h4>Animações:</h4> <p>Permite animar a transição entre estilos. Exemplo: <br><b>animation: myAnimation 5s infinite;.</b></p>
+
+                <h4>Gradientes:</h4> <p>Permite exibir transições suaves entre duas ou mais cores especificadas. Exemplo: <br><b>background: linear-gradient(red, yellow);.</b></p>
+                
+                <h4>Sombras:</h4> <p>Aplica sombras aos elementos. Exemplo: <br><b>box-shadow: 5px 5px 5px grey;.</b></p>
+
+                <h4>Tipografia:</h4><p>Estiliza o texto. Exemplo: <br><b>font-size: 20px; font-family: Arial;.</b></p>
+            </li>
+            <li>
+                <h3>Responsividade e Media Queries:</h3>
+                <p>Design Responsivo, Media Queries.</p>
+                <h4>Design Responsivo:</h4><p>Faz com que o layout se adapte ao tamanho da tela.</p>
+                <h4>Media Queries:</h4><p>Aplica estilos diferentes para diferentes dispositivos ou tamanhos de tela. Exemplo: <br><b> @media screen and (max-width: 600px) {...}.</b></p>
+            </li>
+            
+             
+            <li>
+                <h3>Frameworks e Pré-processadores:</h3>
+                <p>Bootstrap, Sass, Less.</p>
+
+                <h4>Bootstrap:</h4><p> Framework CSS para desenvolvimento responsivo e móvel.</p>
+                
+                <h4>Sass:</h4><p> Pré-processador CSS que permite usar variáveis, aninhamento, mixins e muito mais.</p>
+
+                <h4>Less:</h4><p> Outro pré-processador CSS semelhante ao Sass.</p>
+            </li>
+           
+        
+        </div>
+</body>
+</html>
