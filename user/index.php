@@ -1,16 +1,22 @@
+<?php
+if (!isset($_SESSION)) {
+    session_start();
+}
+
+if (!isset($_SESSION['user'])) {
+    header("Location: ./login.php");
+}
+?>
+
 <!DOCTYPE html>
-<html lang="PT-BR">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Barra de Pesquisa no Header</title>
-    <link rel="stylesheet" href="style.css"/>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php echo "<title>Perfil de ".$_SESSION['name']."</title>";?>
 </head>
-
 <body>
-    <script src="./script.js"></script>
+<script src="./script.js"></script>
     <header>
         <div class="header-circle"></div>
         <nav>
@@ -92,7 +98,5 @@
             </div>
         </footer> -->
     </main>
-
 </body>
-
 </html>

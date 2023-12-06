@@ -1,13 +1,67 @@
-<svg width="451" height="376" viewBox="0 0 451 376" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_68_2)">
-<path d="M384.855 13.429L355.82 338.68L225.305 374.861L95.1497 338.73L66.1445 13.429H384.855Z" fill="#E44D26"/>
-<path d="M225.5 347.205L330.963 317.969L355.774 40.0265H225.5V347.205Z" fill="#F16529"/>
-<path d="M169.056 119.822H225.5V79.9246H125.452L126.406 90.6281L136.213 200.573H225.5V160.677H172.703L169.056 119.822ZM178.049 220.522H137.996L143.585 283.167L225.316 305.853L225.5 305.803V264.293L225.325 264.339L180.89 252.342L178.049 220.522Z" fill="#EBEBEB"/>
-<path d="M225.363 200.573H274.494L269.862 252.317L225.361 264.327V305.834L307.157 283.167L307.757 276.426L317.134 171.39L318.107 160.677H225.363V200.573ZM225.363 119.724V119.822H321.738L322.537 110.854L324.356 90.6281L325.31 79.9246H225.363V119.724Z" fill="white"/>
-</g>
-<defs>
-<clipPath id="clip0_68_2">
-<rect width="451" height="376" fill="white"/>
-</clipPath>
-</defs>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="376"
+   height="376"
+   viewBox="0 0 376 376"
+   fill="none"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="html.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.35355339"
+     inkscape:cx="-63.63961"
+     inkscape:cy="63.63961"
+     inkscape:window-width="1920"
+     inkscape:window-height="1057"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <g
+     clip-path="url(#clip0_68_2)"
+     id="g4"
+     transform="matrix(1.0402807,0,0,1.0403063,-46.583038,-13.970267)">
+    <path
+       d="M 384.855,13.429 355.82,338.68 225.305,374.861 95.1497,338.73 66.1445,13.429 Z"
+       fill="#e44d26"
+       id="path1" />
+    <path
+       d="M 225.5,347.205 330.963,317.969 355.774,40.0265 H 225.5 Z"
+       fill="#f16529"
+       id="path2" />
+    <path
+       d="M 169.056,119.822 H 225.5 V 79.9246 H 125.452 l 0.954,10.7035 9.807,109.9449 H 225.5 v -39.896 h -52.797 z m 8.993,100.7 h -40.053 l 5.589,62.645 81.731,22.686 0.184,-0.05 v -41.51 l -0.175,0.046 -44.435,-11.997 z"
+       fill="#ebebeb"
+       id="path3" />
+    <path
+       d="m 225.363,200.573 h 49.131 l -4.632,51.744 -44.501,12.01 v 41.507 l 81.796,-22.667 0.6,-6.741 9.377,-105.036 0.973,-10.713 h -92.744 z m 0,-80.849 v 0.098 h 96.375 l 0.799,-8.968 1.819,-20.2259 0.954,-10.7035 h -99.947 z"
+       fill="#ffffff"
+       id="path4" />
+  </g>
+  <defs
+     id="defs4">
+    <clipPath
+       id="clip0_68_2">
+      <rect
+         width="451"
+         height="376"
+         fill="#ffffff"
+         id="rect4"
+         x="0"
+         y="0" />
+    </clipPath>
+  </defs>
 </svg>

@@ -1,3 +1,22 @@
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #212629 #1E1E1E;
+}
+  
+*::-webkit-scrollbar {
+    width: 12px;
+}
+  
+*::-webkit-scrollbar-track {
+    background: #1E1E1E;
+}
+  
+*::-webkit-scrollbar-thumb {
+    background-color: #212629;
+    border-radius: 20px;
+    border: 3px solid #1E1E1E;
+}
+
 a{
     font-size: 2rem;
 }
@@ -43,7 +62,7 @@ a:hover{
 
 .search-item{
     display: flex;
-    flex-wrap: nowrap;
+    flex-direction: column;
     padding-bottom: 20px;
     height: 150px;
     position: relative;
@@ -67,10 +86,10 @@ a:hover{
     object-fit: fill;
     position: absolute;
     top: -30px;
-    left: 10px
+    left: 10px;
 }
 
-.search-item a {
+.search-item a, p {
     margin-left: 180px;
     margin-top: 5px;
 }
@@ -84,4 +103,10 @@ a:hover{
     color: white;
     font-size: 2rem;
     text-align: center;
+}
+
+p{
+    font-size: 1.5rem;
+    overflow: hidden;
+    color: #595959;
 }
