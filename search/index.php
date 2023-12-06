@@ -18,7 +18,7 @@
             <div class="nav-menu"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="36" height="36" viewBox="0 0 50 50" style="fill:#FFFFFF;">
                 <path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"></path>
                 </svg></div>
-            <form action="http://localhost/gitClone/Devdossier/search/" method="GET">
+            <form action="?" method="GET">
 
                 <input type="text" id="search-box" name="q" placeholder="Pesquisar" required/>
                 <button type="submit" id="search-button" value="Pesquisar"> <img src="../img/search.svg" alt=""></button>
