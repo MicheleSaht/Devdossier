@@ -10,7 +10,7 @@
 
 <body>
 <div class="container">
-    <h1>Introdução</h1>
+    <h1 id="sql.1">Introdução</h1>
 
     <p>SQL (Structured Query Language) é uma linguagem de programação usada para gerenciar e manipular bancos de dados relacionais. Em relação aos sites WordPress, SQL desempenha um papel vital no mundo da tecnologia. Ele é responsável por armazenar e administrar
         informações essenciais, como postagens, dados de usuários, detalhes de plugins e muito mais.</p>
@@ -22,7 +22,7 @@
         de gerenciamento de banco de dados. Essa interação segue o modelo cliente-servidor, em que o WordPress age como o cliente que solicita e manipula os dados, enquanto o servidor de banco de dados funciona como o servidor que atende a essas solicitações,
         realizando operações de leitura, gravação e manutenção dos dados de maneira eficaz e segura.</p>
 
-    <h1>Como Instalar:</h1>
+    <h1 id="sql.2">Como Instalar:</h1>
 
     <p>O primeiro passo é instalar o WampServer, que é um pacote de software gratuito e de código aberto.</p>
 
@@ -44,12 +44,12 @@
 
     <p>Na página de downloads, você encontrará diferentes versões para diferentes sistemas operacionais.</p>
 
-    <h2>Configuração inicial do SQL:</h2>
+    <h2 id="sql.3">Configuração inicial do SQL:</h2>
 
     <p>A preparação inicial do SQL compreende uma série de procedimentos, como a instalação, a definição de uma senha para o usuário "root", a configuração do arquivo de configuração, o início do servidor, a criação de bancos de dados e contas de usuário,
         a implementação de medidas de segurança, a realização de testes de conectividade e o estabelecimento de um plano regular de backup. Estas etapas são cruciais para adequar o SQL às exigências particulares do ambiente e da aplicação em questão.</p>
 
-    <h2>Subconjuntos:</h2>
+    <h2 id="sql.4">Subconjuntos:</h2>
 
     <p><strong>DQL (Data Query Language):</strong> Aqui, você busca informações do banco de dados. O comando principal é o SELECT, usado para pegar dados de tabelas. Outros comandos, como ORDER BY para organizar dados, GROUP BY para agrupá-los e JOIN para
         combinar dados, também podem ser úteis.</p>
@@ -66,7 +66,7 @@
 
 
 
-    <h1>Gerenciamento de Variáveis de Configuração e Estrutura de Tabelas no SQL</h1>
+    <h1 id="sql.5">Gerenciamento de Variáveis de Configuração e Estrutura de Tabelas no SQL</h1>
 
     <h2>Gerenciamento de Configurações</h2>
     <p>Gerenciar SQL significa ajustar como o banco de dados funciona, envolvendo várias etapas. Isso inclui mexer em um arquivo especial que controla o funcionamento do banco de dados ou usar comandos SQL, como SET GLOBAL ou SET SESSION, para fazer mudanças
@@ -75,10 +75,10 @@
         fundamental para entender como o banco de dados foi configurado ao longo do tempo.</p>
     <p>A segurança é uma preocupação ao fazer ajustes para garantir que o banco de dados esteja seguro contra ameaças e riscos.</p>
 
-    <h2>Modelagem de Dados</h2>
+    <h2 id="sql.6">Modelagem de Dados</h2>
     <p>A modelagem de dados é crucial e envolve planejar como os dados são organizados em tabelas, como se relacionam e garantir que as informações sejam armazenadas e recuperadas de maneira eficiente.</p>
 
-    <h2>Estrutura de Tabelas no SQL</h2>
+    <h2 id="sql.7">Estrutura de Tabelas no SQL</h2>
     <p>Ao criar uma tabela no SQL, considere vários elementos:</p>
     <ul>
         <li>Nome da tabela que representa o recipiente dos dados.</li>
@@ -92,16 +92,16 @@
     </ul>
     <p>Esses elementos são fundamentais para organizar e armazenar os dados eficientemente no banco de dados, independentemente do sistema de gerenciamento de banco de dados específico, como o MySQL.</p>
 
-    <h2>Chaves Primárias e Estrangeiras</h2>
+    <h2 id="sql.8">Chaves Primárias e Estrangeiras</h2>
     <p>A chave primária é uma coluna que identifica cada linha de forma única, evitando informações repetidas na tabela e facilitando a ligação com outras tabelas por meio de chaves estrangeiras.</p>
     <p>A chave estrangeira é outra coluna que está ligada com a chave primária de outra tabela, permitindo juntar informações de tabelas diferentes e garantindo a integridade referencial.</p>
 
-    <h2>Tipos de Dados Suportados pelo SQL</h2>
+    <h2 id="sql.9">Tipos de Dados Suportados pelo SQL</h2>
     <p>O SQL suporta diversos tipos de dados para armazenar informações no banco de dados, como números inteiros, números com casas decimais, strings, datas e horários, valores lógicos, dados binários, escolhas pré-definidas, informações especiais e o formato
         de texto conhecido como JSON. A escolha do tipo de dados depende das necessidades específicas do banco de dados.</p>
 
-    <h2>Consultas SQL</h2>
-    <h3>Comandos SQL Básicos:</h3>
+    <h2 id="sql.10">Consultas SQL</h2>
+    <h3 id="sql.11">Comandos SQL Básicos:</h3>
     <ul>
         <li><strong>SELECT:</strong> Usado para recuperar dados de uma tabela.</li>
         <li><strong>INSERT:</strong> Usado para adicionar novos registros a uma tabela.</li>
@@ -109,39 +109,39 @@
         <li><strong>DELETE:</strong> Usado para remover registros de uma tabela.</li>
     </ul>
 
-    <h1>Consultas Avançadas em SQL</h1>
+    <h1 id="sql.12">Consultas Avançadas em SQL</h1>
 
-    <h2>Operadores de Junção (JOINs)</h2>
+    <h2 id="sql.13">Operadores de Junção (JOINs)</h2>
     <ul>
         <li><strong>INNER JOIN:</strong> Retorna apenas os registros que têm correspondências em ambas as tabelas.</li>
         <li><strong>LEFT JOIN:</strong> Retorna todos os registros da tabela à esquerda e os correspondentes da tabela à direita.</li>
     </ul>
 
-    <h2>Subconsultas</h2>
+    <h2 id="sql.14">Subconsultas</h2>
     <ul>
         <li><strong>IN:</strong> Usado para combinar dados de várias tabelas com base em colunas relacionadas.</li>
         <li><strong>Subconsulta de Tabela:</strong> Retorna várias linhas.</li>
     </ul>
 
-    <h2>Agrupamento</h2>
+    <h2 id="sql.15">Agrupamento</h2>
     <p>Usado para agrupar registros com base em valores comuns.</p>
 
-    <h2>Funções de Agregação</h2>
+    <h2 id="sql.16">Funções de Agregação</h2>
     <ul>
         <li><strong>SUM:</strong> Soma os valores em uma coluna.</li>
         <li><strong>AVG:</strong> Calcula a média dos valores em uma coluna.</li>
     </ul>
 
-    <h2>Restrição de Dados</h2>
+    <h2 id="sql.17">Restrição de Dados</h2>
     <p>Define restrições para controlar quais dados podem ser inseridos ou modificados em uma tabela.</p>
 
-    <h2>Condições de Comparação e Lógicas</h2>
+    <h2 id="sql.18">Condições de Comparação e Lógicas</h2>
     <p>Usadas para filtrar dados com base em critérios específicos.</p>
 
-    <h2>Cláusulas</h2>
+    <h2 id="sql.19">Cláusulas</h2>
     <p>Elementos que refinam uma consulta, como a cláusula WHERE para filtrar dados.</p>
 
-    <h2>INSERT INTO</h2>
+    <h2 id="sql.20">INSERT INTO</h2>
     <p>Uma forma específica de inserir dados em uma tabela.</p>
 </div>
 </body>
