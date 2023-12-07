@@ -25,7 +25,7 @@
             </form>
             <div class="nav-redirect">
 
-                <a class="nav-item" href="">Sobre nós</a>
+                <a class="nav-item" href="">Home</a>
                 <a class="nav-item" href="">Sobre nós</a>
                 <a class="nav-item" href="">Sobre nós</a>
             </div>
@@ -50,7 +50,7 @@
                 </div>
             </a>
             
-            <a href="">
+            <a href="../Devdossier/linguagem/html.html">
                 <div class="container-item">
                     <img src="./img/html.svg" alt="#" />
                     <span style="color: #EE7F2F;">HTML</span>
@@ -58,7 +58,7 @@
             </a>
             
 
-            <a href="../Devdossier/linguagem/php.php">
+            <a href="../Devdossier/linguagem/php.html">
                 <div class="container-item">
                     <img src="./img/php.svg" alt="#" />
                     <span style="color: #9FC4FB;">PHP</span>
@@ -66,7 +66,7 @@
             </a>
             
 
-            <a href="">
+            <a href="../Devdossier/linguagem/modelagem.html">
                 <div class="container-item">
                     <img src="./img/sql.svg" alt="#" />
                     <span style="color: #92A2D9;">Modelagem</span>
@@ -98,7 +98,8 @@
             </a>
             
         </div>
-        <!-- <footer>
+<!--         
+        <footer>
             <div>
                 <p>&copy; 2023 DevDossier </p>
             </div>

@@ -7,6 +7,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="linguagem.css">
 
+    <style>
+        ul {
+            padding: 20px 40px;
+        }
+        .java {
+            padding: 20px 40px;
+        }
+    </style>
 </head>
 
 <body>
@@ -52,28 +60,28 @@
             <section>
                 <h2 id="java.4">Declaração de Variáveis em Java</h2>
                 <p>Além dos tipos primitivos, Java permite a declaração de variáveis de objetos, que são instâncias de classes personalizadas ou da biblioteca padrão. Exemplo:</p>
-                <pre>
-            <code>
-                // Declaração de variável do tipo int
-                int numeroInteiro = 42;
+                
+            <div class="java">
+                // Declaração de variável do tipo int <br>
+                int numeroInteiro = 42; <br>
 
 
-                // Declaração de variável do tipo double
-                double numeroDecimal = 3.14;
+                // Declaração de variável do tipo double <br>
+                double numeroDecimal = 3.14; <br>
 
 
-                // Declaração de variável do tipo char
-                char caractere = 'A';
+                // Declaração de variável do tipo char <br>
+                char caractere = 'A'; <br>
 
 
-                // Declaração de variável do tipo boolean
-                boolean verdadeiroOuFalso = true;
+                // Declaração de variável do tipo boolean <br>
+                boolean verdadeiroOuFalso = true; <br>
 
 
-                // Declaração de variável de objeto
-                MinhaClasse objetoPersonalizado = new MinhaClasse();
-            </code>
-        </pre>
+                // Declaração de variável de objeto <br>
+                MinhaClasse objetoPersonalizado = new MinhaClasse(); <br>
+            </div>
+        
             </section>
 
 
@@ -83,61 +91,60 @@
             <section>
                 <h2>Classe Scanner</h2>
                 <p>O uso da classe Scanner em Java permite a entrada de dados a partir do teclado ou de outras fontes. Esta classe pode ser usada para armazenar dados inseridos em variáveis, facilitando a manipulação desses dados dentro do programa. Exemplo:</p>
-                <pre>
-            <code>
-                import java.util.Scanner;
+                
+            <div class="java">
+                import java.util.Scanner; <br> <br>
 
 
-                public class EntradaDeDados {
-                    public static void main(String[] args) {
-                        // Criando um objeto Scanner para ler dados do teclado
-                        Scanner scanner = new Scanner(System.in);
+                public class EntradaDeDados { <br>
+                    public static void main(String[] args) { <br>
+                        // Criando um objeto Scanner para ler dados do teclado <br>
+                        Scanner scanner = new Scanner(System.in); <br><br>
+
+                        // Solicitando e lendo um número inteiro <br>
+                        System.out.print("Digite um número inteiro: "); <br>
+                        int numeroInteiro = scanner.nextInt(); <br> <br>
 
 
-                        // Solicitando e lendo um número inteiro
-                        System.out.print("Digite um número inteiro: ");
-                        int numeroInteiro = scanner.nextInt();
+                        // Exibindo o número inserido <br>
+                        System.out.println("Você digitou: " + numeroInteiro); <br> <br>
 
 
-                        // Exibindo o número inserido
-                        System.out.println("Você digitou: " + numeroInteiro);
-
-
-                        // Fechando o scanner
-                        scanner.close();
-                    }
-                }
-            </code>
-        </pre>
+                        // Fechando o scanner <br>
+                        scanner.close(); <br>
+                    } <br>
+                } <br>
+            </div>
+        
             </section>
             <section>
                 <h2 id="java.6">Manipulação de Strings em Java</h2>
                 <p>As strings em Java são objetos da classe String, que oferece diversos métodos úteis para manipular e processar cadeias de caracteres. Exemplo:</p>
-                <pre>
-            <code>
-                public class ManipulacaoDeStrings {
-                    public static void main(String[] args) {
-                        // Exemplo de manipulação de strings
-                        String texto = "Olá, mundo!";
+                
+            <div class="java">
+                public class ManipulacaoDeStrings { <br>
+                    public static void main(String[] args) { <br>
+                        // Exemplo de manipulação de strings <br>
+                        String texto = "Olá, mundo!"; <br>
 
+                                                        <br>
+                        // Obtendo o tamanho da string <br>
+                        int tamanho = texto.length(); <br>
+                        System.out.println("Tamanho da string: " + tamanho); <br>
 
-                        // Obtendo o tamanho da string
-                        int tamanho = texto.length();
-                        System.out.println("Tamanho da string: " + tamanho);
+                                                        <br>
+                        // Obtendo o caractere na posição 4 <br>
+                        char quartoCaractere = texto.charAt(3); <br>
+                        System.out.println("Quarto caractere: " + quartoCaractere); <br>
 
-
-                        // Obtendo o caractere na posição 4
-                        char quartoCaractere = texto.charAt(3);
-                        System.out.println("Quarto caractere: " + quartoCaractere);
-
-
-                        // Extraindo parte da string (substring)
-                        String parte = texto.substring(0, 5);
-                        System.out.println("Parte da string: " + parte);
+                        <br>
+                        // Extraindo parte da string (substring) <br>
+                        String parte = texto.substring(0, 5); <br>
+                        System.out.println("Parte da string: " + parte); <br>
                     }
                 }
-            </code>
-        </pre>
+            </div>
+        
             </section>
 
             <header>
@@ -194,87 +201,87 @@
             <section>
                 <h2 id="java.13">Estrutura de Repetição</h2>
                 <p>As estruturas de repetição em Java, como o loop for, while e do-while, permitem a execução repetida de um bloco de código com base em uma condição. Exemplo:</p>
-                <pre>
-            <code>
-                public class EstruturaRepeticao {
-                    public static void main(String[] args) {
-                        // Exemplo de loop for
-                        for (int i = 0; i < 5; i++) {
-                            System.out.println("Iteração " + i);
-                        }
+                
+            <div class="java">
+                public class EstruturaRepeticao {  <br>
+                    public static void main(String[] args) { <br>
+                        // Exemplo de loop for <br>
+                        for (int i = 0; i < 5; i++) { <br>
+                            System.out.println("Iteração " + i); <br>
+                        } <br>
+                        <br>
 
+                        // Exemplo de loop while <br>
+                        int contador = 0; <br>
+                        while (contador < 5) { <br>
+                            System.out.println("Contador: " + contador); <br>
+                            contador++; <br>
+                        } <br>
+                        <br>
 
-                        // Exemplo de loop while
-                        int contador = 0;
-                        while (contador < 5) {
-                            System.out.println("Contador: " + contador);
-                            contador++;
-                        }
-
-
-                        // Exemplo de loop do-while
-                        int j = 0;
-                        do {
-                            System.out.println("Valor de j: " + j);
-                            j++;
-                        } while (j < 5);
-                    }
-                }
-            </code>
-        </pre>
+                        // Exemplo de loop do-while <br>
+                        int j = 0; <br>
+                        do { <br>
+                            System.out.println("Valor de j: " + j); <br>
+                            j++; <br>
+                        } while (j < 5); <br>
+                    } <br>
+                } <br>
+            </div>
+        
             </section>
             <section>
                 <h2 id="java.14">Condições em Java</h2>
                 <p>As estruturas condicionais, como if, else, else if e switch-case, permitem que um programa tome decisões com base em condições específicas. Exemplo:</p>
-                <pre>
-            <code>
-                public class EstruturaCondicao {
-                    public static void main(String[] args) {
-                        int numero = 10;
+                
+            <div class="java">
+                public class EstruturaCondicao {  <br>
+                    public static void main(String[] args) { <br>
+                        int numero = 10; <br>
+                        <br>
 
+                        // Exemplo de if-else <br>
+                        if (numero > 0) { <br>
+                            System.out.println("O número é positivo."); <br>
+                        } else { <br>
+                            System.out.println("O número é não positivo."); <br>
+                        } <br>
+                        <br>
 
-                        // Exemplo de if-else
-                        if (numero > 0) {
-                            System.out.println("O número é positivo.");
-                        } else {
-                            System.out.println("O número é não positivo.");
-                        }
-
-
-                        // Exemplo de switch-case
-                        switch (numero) {
-                            case 0:
-                                System.out.println("O número é zero.");
-                                break;
-                            case 10:
-                                System.out.println("O número é dez.");
-                                break;
-                            default:
-                                System.out.println("O número não é zero nem dez.");
-                        }
-                    }
-                }
-            </code>
-        </pre>
+                        // Exemplo de switch-case <br>
+                        switch (numero) { <br>
+                            case 0: <br>
+                                System.out.println("O número é zero."); <br>
+                                break; <br>
+                            case 10: <br>
+                                System.out.println("O número é dez."); <br>
+                                break; <br>
+                            default: <br>
+                                System.out.println("O número não é zero nem dez."); <br>
+                        } <br>
+                    } <br>
+                } <br>
+            </div>
+        
             </section>
             <section>
                 <h2 id="java.15">Matriz em Java</h2>
                 <p>Matrizes em Java são estruturas de dados que permitem armazenar coleções de elementos em uma grade bidimensional. Exemplo:</p>
-                <pre>
-            <code>
-                public class MatrizExemplo {
-                    public static void main(String[] args) {
-                        // Exemplo de declaração e inicialização de matriz
-                        int[][] matriz = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+                
+            <div class="java">
+                public class MatrizExemplo {  <br>
+                    public static void main(String[] args) { <br>
+                        // Exemplo de declaração e inicialização de matriz <br>
+                        int[][] matriz = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}; <br>
 
-
-                        // Acessando elementos da matriz
-                        int elemento = matriz[1][2];
-                        System.out.println("Elemento na linha 1, coluna 2: " + elemento);
-                    }
-                }
-            </code>
-        </pre>
+                        <br>
+                        // Acessando elementos da matriz <br>
+                        int elemento = matriz[1][2]; <br>
+                        System.out.println("Elemento na linha 1, coluna 2: " + elemento); <br>
+                    } <br>
+                } <br>
+            </div>
+        
             </section>
             <header>
                 <h1 id="java.16">Arrays e Orientação a Objetos em Java</h1>
@@ -282,64 +289,64 @@
             <section>
                 <h2 id="java.17">Arrays em Java</h2>
                 <p>Arrays em Java permitem armazenar coleções de elementos do mesmo tipo em uma única dimensão. Exemplo:</p>
-                <pre>
-            <code>
-                public class ArraysExemplo {
-                    public static void main(String[] args) {
-                        // Exemplo de declaração e inicialização de um array
-                        int[] numeros = {1, 2, 3, 4, 5};
+                
+            <div class="java">
+                public class ArraysExemplo {  <br>
+                    public static void main(String[] args) { <br>
+                        // Exemplo de declaração e inicialização de um array <br>
+                        int[] numeros = {1, 2, 3, 4, 5}; <br>
+                        <br>
 
-
-                        // Acessando elementos do array
-                        int elemento = numeros[2];
-                        System.out.println("Elemento na posição 2: " + elemento);
+                        // Acessando elementos do array <br>
+                        int elemento = numeros[2]; <br>
+                        System.out.println("Elemento na posição 2: " + elemento); <br>
                     }
                 }
                 
-            </code>
-        </pre>
+            </div>
+        
             </section>
             <section>
                 <h2 id="java.18">Orientação a Objetos em Java</h2>
                 <p>A orientação a objetos em Java é um paradigma de programação em que os programas são construídos em torno de objetos, que são instâncias de classes. Exemplo:</p>
-                <pre>
-            <code>
-                // Exemplo de definição de classe
-                public class Carro {
-                    // Atributos
-                    String modelo;
-                    String cor;
-                    int ano;
+                
+            <div class="java">
+                // Exemplo de definição de classe  <br>
+                public class Carro { <br>
+                    // Atributos <br>
+                    String modelo; <br>
+                    String cor; <br>
+                    int ano; <br>
+
+                    <br>
+                    // Método construtor <br>
+                    public Carro(String modelo, String cor, int ano) { <br>
+                        this.modelo = modelo; <br>
+                        this.cor = cor; <br>
+                        this.ano = ano; <br>
+                    } <br>
 
 
-                    // Método construtor
-                    public Carro(String modelo, String cor, int ano) {
-                        this.modelo = modelo;
-                        this.cor = cor;
-                        this.ano = ano;
-                    }
+                    // Outros métodos <br>
+                    public void ligar() { <br>
+                        System.out.println("O carro está ligado."); <br>
+                    } <br>
+                } <br>
 
+                <br>
+                // Exemplo de criação de objeto <br>
+                public class Main { <br>
+                    public static void main(String[] args) { <br>
+                        // Criando um objeto Carro <br>
+                        Carro meuCarro = new Carro("Fusca", "Azul", 1970); <br>
 
-                    // Outros métodos
-                    public void ligar() {
-                        System.out.println("O carro está ligado.");
-                    }
-                }
-
-
-                // Exemplo de criação de objeto
-                public class Main {
-                    public static void main(String[] args) {
-                        // Criando um objeto Carro
-                        Carro meuCarro = new Carro("Fusca", "Azul", 1970);
-
-
-                        // Chamando métodos do objeto
-                        meuCarro.ligar();
-                    }
-                }
-            </code>
-        </pre>
+                        <br>
+                        // Chamando métodos do objeto <br>
+                        meuCarro.ligar(); <br>
+                    } <br>
+                } <br>
+            </div>
+        
             </section>
             <section>
                 <h2 id="java.19">Conclusão</h2>
@@ -352,86 +359,86 @@
             </header>
             <section>
                 <h2 id="java.21">Instanciar uma Classe em Java</h2>
-                <p>Para instanciar uma classe em Java, utilize a palavra-chave <code>new</code> seguida pelo nome da classe e, se necessário, argumentos para o construtor. Exemplo:</p>
-                <pre>
-            <code>
+                <p>Para instanciar uma classe em Java, utilize a palavra-chave <div class="java">new</div> seguida pelo nome da classe e, se necessário, argumentos para o construtor. Exemplo:</p>
+                
+            <div class="java">
                 // Instanciando a classe Carro
                 Carro meuCarro = new Carro("Fusca", "Azul", 1970);
-            </code>
-        </pre>
+            </div>
+        
             </section>
             <section>
                 <h2 id="java.22">Encapsulamento em Java</h2>
                 <p>O encapsulamento em Java envolve ocultar os detalhes internos de uma classe. Exemplo:</p>
-                <pre>
-            <code>
-                // Exemplo de encapsulamento
-                public class Carro {
-                    private String modelo;
+                
+            <div class="java">
+                // Exemplo de encapsulamento  <br>
+                public class Carro { <br>
+                    private String modelo; <br>
 
+                    <br>
+                    // Método público para acessar o modelo <br>
+                    public String getModelo() { <br>
+                        return modelo; <br>
+                    } <br>
 
-                    // Método público para acessar o modelo
-                    public String getModelo() {
-                        return modelo;
-                    }
-
-
-                    // Método público para modificar o modelo
-                    public void setModelo(String novoModelo) {
-                        modelo = novoModelo;
-                    }
-                }
-            </code>
-        </pre>
+                    <br>
+                    // Método público para modificar o modelo <br>
+                    public void setModelo(String novoModelo) { <br>
+                        modelo = novoModelo; <br>
+                    } <br>
+                } <br>
+            </div>
+        
             </section>
             <section>
                 <h2 id="java.23">Herança em Java</h2>
                 <p>A herança permite criar novas classes com base em classes existentes. Exemplo:</p>
-                <pre>
-            <code>
-                // Exemplo de herança
-                public class CarroEsportivo extends Carro {
-                    private boolean turbo;
+                
+            <div class="java">
+                // Exemplo de herança  <br>
+                public class CarroEsportivo extends Carro { <br>
+                    private boolean turbo; <br>
+                    <br>
 
-
-                    // Construtor da classe filha
-                    public CarroEsportivo(String modelo, String cor, int ano, boolean turbo) {
-                        super(modelo, cor, ano);
-                        this.turbo = turbo;
-                    }
-                }
-            </code>
-        </pre>
+                    // Construtor da classe filha <br>
+                    public CarroEsportivo(String modelo, String cor, int ano, boolean turbo) { <br>
+                        super(modelo, cor, ano); <br>
+                        this.turbo = turbo; <br>
+                    } <br>
+                } <br>
+            </div>
+        
             </section>
             <section>
                 <h2 id="java.24">Polimorfismo em Java</h2>
                 <p>O polimorfismo permite tratar objetos de diferentes classes de maneira genérica. Exemplo:</p>
-                <pre>
-            <code>
-                // Exemplo de polimorfismo
-                Carro meuCarro = new CarroEsportivo("Fusca Esportivo", "Vermelho", 2023, true);
-            </code>
-        </pre>
+                
+            <div class="java">
+                // Exemplo de polimorfismo <br>
+                Carro meuCarro = new CarroEsportivo("Fusca Esportivo", "Vermelho", 2023, true); <br>
+            </div>
+        
             </section>
             <section>
                 <h2 id="java.25">Classes Abstratas e Interfaces em Java</h2>
                 <p>Classes abstratas e interfaces são fundamentais para definir contratos e promover o polimorfismo. Exemplo:</p>
-                <pre>
-            <code>
-                // Exemplo de classe abstrata
-                public abstract class Animal {
-                    // Método abstrato
-                    public abstract void fazerSom();
-                }
+                
+            <div class="java">
+                // Exemplo de classe abstrata <br>
+                public abstract class Animal { <br>
+                    // Método abstrato <br>
+                    public abstract void fazerSom(); <br>
+                } <br>
+                <br>
 
-
-                // Exemplo de interface
-                public interface Nadador {
-                    // Método na interface
-                    void nadar();
-                }
-            </code>
-        </pre>
+                // Exemplo de interface <br>
+                public interface Nadador { <br>
+                    // Método na interface <br>
+                    void nadar(); <br>
+                } <br>
+            </div>
+        
             </section>
 
         </main>

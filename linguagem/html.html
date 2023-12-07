@@ -27,6 +27,15 @@
             justify-content: center;
             align-items: center;
         }
+        ol, ul {
+            padding: 20px 40px;
+        }
+        dl{
+            padding: 20px 40px;
+        }
+        h2, h3 {
+            padding-top: 10px;
+        }
     </style>
 </head>
 <body>
@@ -58,11 +67,11 @@
         <h2 id="html.5">Comentários em HTML</h2>
         <p>Em HTML, os comentários são usados para incluir notas ou descrições que não são visíveis na página da web, mas servem para fornecer informações para os desenvolvedores ou para quem está revisando o código. Comentários em HTML são ignorados pelos navegadores e não afetam a renderização da página. Eles são bons para documentar o código e fazer anotações ou desativar temporariamente partes do código.</p>
         <p>Exemplo:</p>
-        <pre>
+        
             <code>
                 <!-- Este é um exemplo de comentário em HTML -->
             </code>
-        </pre>
+        
     </section>
 
     <section>
@@ -73,17 +82,17 @@
         
         <h4>TÍTULO:</h4>
         <p>Usada para definir o título da página da web. Este título é exibido na barra de título do navegador e é uma parte fundamental do documento HTML.</p>
-        <pre>
+        
             <code>
                 <head>
                     <title>Minha Página</title>
                 </head>
             </code>
-        </pre>
+        
 
         <h4>META:</h4>
         <p>É usada para fornecer metadados ou informações sobre o documento HTML que não são diretamente visíveis na página, mas são importantes para a configuração e a interpretação do documento pelos navegadores da web e mecanismos de busca.</p>
-        <pre>
+        
             <code>
                 <head>
                     <meta charset="UTF-8">
@@ -91,18 +100,18 @@
                     <!-- Outras meta tags aqui -->
                 </head>
             </code>
-        </pre>
+        
 
         <h4>LINK:</h4>
         <p>É usada para criar ligações a recursos externos, geralmente folhas de estilo (CSS), mas também pode ser usada para outros tipos de ligações, como fontes, ícones, feeds RSS e até mesmo relacionar documentos.</p>
-        <pre>
+        
             <code>
                 <head>
                     <link rel="stylesheet" href="estilos.css">
                     <!-- Outros links aqui -->
                 </head>
             </code>
-        </pre>
+        
     </section>
 
     <header>
@@ -112,18 +121,18 @@
     <section>
         <h2 id="html.8">Tags de Parágrafo &lt;p&gt;</h2>
         <p>É utilizada para definir e estruturar parágrafos de texto em um documento HTML. Cada vez que você deseja criar um novo parágrafo de texto, você envolve o texto desse parágrafo com a tag &lt;p&gt;.</p>
-        <pre>
+        
             <code>
                 <p>Este é um parágrafo de exemplo.</p>
                 <p>Outro parágrafo aqui.</p>
             </code>
-        </pre>
+        
     </section>
 
     <section>
         <h2 id="html.9">Tags de Cabeçalho &lt;h1&gt; a &lt;h6&gt;</h2>
         <p>As tags de cabeçalho &lt;h1&gt; a &lt;h6&gt; são usadas para criar títulos ou cabeçalhos em HTML. Elas representam uma hierarquia de seis níveis de títulos, onde &lt;h1&gt; é o mais alto em importância e &lt;h6&gt; é o mais baixo.</p>
-        <pre>
+        
             <code>
                 <h1>Título Principal</h1>
                 <h2>Subtítulo 1</h2>
@@ -132,13 +141,13 @@
                 <h5>Subtítulo 4</h5>
                 <h6>Subtítulo 5</h6>
             </code>
-        </pre>
+        
     </section>
 
     <section>
         <h2 id="html.10">Listas Ordenadas &lt;ol&gt;</h2>
         <p>Uma lista ordenada é usada quando a ordem dos itens é importante, e os itens são numerados automaticamente.</p>
-        <pre>
+        
             <code>
                 <ol>
                     <li>Item 1</li>
@@ -146,13 +155,13 @@
                     <li>Item 3</li>
                 </ol>
             </code>
-        </pre>
+        
     </section>
 
     <section>
         <h2 id="html.11">Listas Não Ordenadas &lt;ul&gt;</h2>
         <p>Uma lista não ordenada é usada quando a ordem dos itens não é importante. Os itens são marcados com marcadores, geralmente pontos.</p>
-        <pre>
+        
             <code>
                 <ul>
                     <li>Item A</li>
@@ -160,7 +169,7 @@
                     <li>Item C</li>
                 </ul>
             </code>
-        </pre>
+        
     </section>
 
     <footer>
@@ -174,7 +183,7 @@
     <section>
         <h2 id="html.13">Listas de Descrição &lt;dl&gt;, &lt;dt&gt;, &lt;dd&gt;</h2>
         <p>As tags &lt;dl&gt;, &lt;dt&gt;, e &lt;dd&gt; são usadas para criar listas de descrição em HTML. Esse tipo de lista é frequentemente chamado de lista de definição e é útil para estruturar informações em que um termo (ou título) é seguido por uma descrição ou uma definição.</p>
-        <pre>
+        
             <code>
                 <dl>
                     <dt>Termo 1</dt>
@@ -187,27 +196,27 @@
                     <dd>Descrição 3</dd>
                 </dl>
             </code>
-        </pre>
+        
     </section>
 
     <section>
         <h2 id="html.14">Ligações &lt;a&gt;</h2>
         <p>A tag &lt;a&gt; é usada para criar links (ou hiperlinks) em uma página da web. Os links permitem que os visitantes cliquem em um texto ou elemento para navegar para outra página, recurso ou local na mesma página.</p>
-        <pre>
+        
             <code>
                 <a href="https://www.exemplo.com">Visite Exemplo.com</a>
             </code>
-        </pre>
+        
     </section>
 
     <section>
         <h2 id="html.15">Imagens &lt;img&gt;</h2>
         <p>A tag &lt;img&gt; é usada para exibir imagens em uma página da web. Ela permite que você insira imagens gráficas, como fotografias, ilustrações, ícones e gráficos, diretamente em seu documento HTML.</p>
-        <pre>
+        
             <code>
                 <img src="caminho/da/imagem.jpg" alt="Descrição da Imagem">
             </code>
-        </pre>
+        
     </section>
 
     <header>
@@ -217,7 +226,7 @@
     <section>
         <h2 id="html.16">Tabelas &lt;table&gt;, &lt;tr&gt;, &lt;td&gt;, &lt;th&gt;</h2>
         <p>As tags &lt;table&gt;, &lt;tr&gt;, &lt;td&gt;, e &lt;th&gt; são usadas em HTML para criar tabelas e organizar dados tabulares em uma página da web.</p>
-        <pre>
+        
             <code>
                 <table>
                     <tr>
@@ -234,13 +243,13 @@
                     </tr>
                 </table>
             </code>
-        </pre>
+        
     </section>
 
     <section>
         <h2 id="html.17">Formulários &lt;form&gt;, &lt;input&gt;, &lt;textarea&gt;, &lt;button&gt;</h2>
         <p>Elementos HTML essenciais para criar formulários interativos em uma página da web.</p>
-        <pre>
+        
             <code style="display: flex; justify-content:flex-start; align-items:flex-start;">
                 <form action="/processar-formulario" method="post" style="display: flex; flex-direction: column; justify-content:flex-start; align-items:flex-start;">
                     <label for="nome">Nome:</label>
@@ -255,7 +264,7 @@
                     <button type="submit">Enviar</button>
                 </form>
             </code>
-        </pre>
+        
     </section>
 
     <header>
@@ -265,7 +274,7 @@
     <section>
         <h2 id="html.18">Elementos de Formulário &lt;form&gt;, &lt;input&gt;, &lt;textarea&gt;, &lt;button&gt;</h2>
         <p>Elementos usados para criar formulários interativos em uma página da web.</p>
-        <pre>
+        
             <code style="display: flex; justify-content:flex-start; align-items:flex-start;">
                 <form action="/processar-formulario" method="post" style="display: flex; flex-direction: column; justify-content:flex-start; align-items:flex-start;">
                     <label for="nome">Nome:</label>
@@ -280,7 +289,7 @@
                     <button type="submit">Enviar</button>
                 </form>
             </code>
-        </pre>
+        
     </section>
     
     <header>
@@ -290,23 +299,23 @@
     <section>
         <h2 id="html.19">Atributos de Elemento (src, href, alt)</h2>
         <p>Atributos usados para configurar e personalizar elementos HTML.</p>
-        <pre>
+        
             <code>
                 <img src="caminho/da/imagem.jpg" alt="Descrição da Imagem">
                 <a href="https://www.exemplo.com">Visite Exemplo.com</a>
             </code>
-        </pre>
+        
     </section>
 
     <section>
         <h2 id="html.20">Atributos Globais (id, class, style)</h2>
         <p>Atributos que podem ser aplicados a praticamente todas as tags HTML.</p>
-        <pre>
+        
             <code>
                 <p id="paragrafo-1" class="destaque" style="color: blue;">Este é um parágrafo com ID, classe e estilo.</p>
                 <div id="div-1" class="container" style="border: 1px solid black;">Este é um contêiner com ID, classe e estilo.</div>
             </code>
-        </pre>
+        
     </section>
 
     <header>
@@ -316,32 +325,32 @@
     <section>
         <h2 id="html.21">Atributo "id"</h2>
         <p>Usado para dar um identificador exclusivo a um elemento HTML em uma página. Frequentemente usado para referenciar o elemento com CSS ou JavaScript.</p>
-        <pre>
+        
             <code>
                 <p id="paragrafo-destaque">Este é um parágrafo com um ID.</p>
             </code>
-        </pre>
+        
     </section>
 
     <section>
         <h2 id="html.22">Atributo "class"</h2>
         <p>Usado para aplicar uma ou mais classes CSS a um elemento. Permite que você aplique estilos específicos a um grupo de elementos semelhantes.</p>
-        <pre>
+        
             <code>
                 <p class="destaque">Este é um parágrafo com uma classe.</p>
                 <p class="destaque">Outro parágrafo com a mesma classe.</p>
             </code>
-        </pre>
+        
     </section>
 
     <section>
         <h2 id="html.23">Atributo "style"</h2>
         <p>O atributo "style" permite que você aplique estilos CSS diretamente a um elemento individual. Fornece controle de estilo inline.</p>
-        <pre>
+        
             <code>
                 <div style="border: 1px solid black; padding: 10px;">Este é um contêiner com estilos inline.</div>
             </code>
-        </pre>
+        
     </section>
 
     <header>
@@ -352,7 +361,7 @@
         <h2 id="html.24">Aninhar Elementos</h2>
         <p>O aninhamento de elementos em HTML refere-se à prática de colocar um elemento HTML dentro de outro. Isso cria uma hierarquia ou estrutura de elementos dentro de uma página da web. O aninhamento é fundamental para a organização e a formatação correta do conteúdo na web.</p>
         <p>Aninhar elementos dentro de outros em HTML é uma prática comum para criar estruturas de conteúdo complexas e bem organizadas em uma página da web. Você pode aninhar praticamente qualquer elemento HTML dentro de outro, seguindo uma lógica e mantendo a estrutura correta.</p>
-        <pre>
+        
             <code>
                 <div>
                     <h3>Este é um exemplo de aninhamento:</h3>
@@ -363,7 +372,7 @@
                     </ul>
                 </div>
             </code>
-        </pre>
+        
     </section>
 
     <header>
@@ -373,7 +382,7 @@
     <section>
         <h2 id="html.25">Elementos Semânticos (&lt;header&gt;, &lt;nav&gt;, &lt;article&gt;)</h2>
         <p>HTML semântico enfatiza o uso de elementos de maneira significativa e estruturada para tornar o conteúdo compreensível para navegadores e seres humanos.</p>
-        <pre>
+        
             <code>
                     <h1>Introdução ao HTML Semântico</h1>
                     <nav>
@@ -392,7 +401,7 @@
                         </ul>
                     </nav>
             </code>
-        </pre>
+        
     </section>
 
     <header>
@@ -402,11 +411,11 @@
     <section>
         <h2 id="html.26">Metatags</h2>
         <p>As meta tags em HTML fornecem informações adicionais sobre uma página da web, sendo importantes para mecanismos de busca e redes sociais.</p>
-        <pre>
+        
             <code>
                 <meta charset="UTF-8">
             </code>
-        </pre>
+        
     </section>
 
     <section>
@@ -415,30 +424,30 @@
         
         <h3>Links Internos</h3>
         <p>Links internos são usados para navegar para partes específicas da mesma página.</p>
-        <pre>
+        
             <code>
                 <a href="#secao1">Ir para Seção 1</a>
             </code>
-        </pre>
+        
 
         <h3>Links Externos</h3>
         <p>Links externos são usados para vincular a outras páginas da web ou recursos externos.</p>
-        <pre>
+        
             <code>
                 <a href="https://www.exemplo.com">Visitar Exemplo.com</a>
             </code>
-        </pre>
+        
 
         <h3>Ancoragens Internas</h3>
         <p>Ancoragens internas permitem criar links que direcionam os visitantes para partes específicas da mesma página da web.</p>
-        <pre>
+        
             <code>
                 <section id="secao1">
                     <h4>Seção 1: Conteúdo Específico</h4>
                     <p>Conteúdo da Seção 1.</p>
                 </section>
             </code>
-        </pre>
+        
     </section>
 
     <header>
@@ -449,11 +458,11 @@
         <h2 id="html.28">Inserir Imagens</h2>
         <p>As imagens são incorporadas em uma página da web usando a tag <code>&lt;img&gt;</code>. Esta tag é um elemento vazio que utiliza atributos para especificar informações sobre a imagem a ser exibida.</p>
         <h3>Exemplo de Inserção de Imagem</h3>
-        <pre>
+        
             <code>
                 <img src="caminho/para/sua-imagem.jpg" alt="Descrição da Imagem">
             </code>
-        </pre>
+        
         <p>O atributo <code>src</code> especifica o caminho para a imagem, e o atributo <code>alt</code> fornece uma descrição textual importante para acessibilidade e quando a imagem não pode ser carregada.</p>
     </section>
     <header>
@@ -465,7 +474,7 @@
         <p>As tabelas em HTML permitem organizar dados de forma tabular. A tag principal é <code>&lt;table&gt;</code>.</p>
 
         <h3>Exemplo de Tabela</h3>
-        <pre>
+        
             <code>
                 <table>
                     <thead>
@@ -486,7 +495,7 @@
                     </tbody>
                 </table>
             </code>
-        </pre>
+        
     </section>
 
     <section>
@@ -494,7 +503,7 @@
         <p>Usando as tags <code>&lt;th&gt;</code> (cabeçalho de tabela) e os atributos <code>colspan</code> e <code>rowspan</code> para criar cabeçalhos.</p>
 
         <h3>Exemplo de Cabeçalhos</h3>
-        <pre>
+        
             <code>
                 <table>
                     <thead>
@@ -518,7 +527,7 @@
                     </tbody>
                 </table>
             </code>
-        </pre>
+        
     </section>
 
     <section>
@@ -526,7 +535,7 @@
         <p>Mesclar células em tabelas usando os atributos <code>rowspan</code> e <code>colspan</code>.</p>
 
         <h3>Exemplo de Mesclagem de Células</h3>
-        <pre>
+        
             <code>
                 <table>
                     <tbody>
@@ -541,11 +550,11 @@
                     </tbody>
                 </table>
             </code>
-        </pre>
+        
     </section>
 
     <h2 id="html.32">Formulário de Exemplo</h2>
-    <form action="/processar-formulario" method="post">
+    <form action="/processar-formulario" method="post" style="display: flex; justify-content:flex-start; align-items:flex-start; flex-direction: column;">
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" required>
 

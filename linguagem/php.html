@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introdução ao PHP</title>
     <link rel="stylesheet" href="linguagem.css">
+
+    <style>
+        h3, h2 {
+            padding: 10px 10px;
+            margin-left: 0px;
+        }
+        ul {
+            padding-left: 50px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -12,11 +22,11 @@
         <h1 id="php.1">Introdução à Linguagem PHP</h1>
     </header>
 
-    <section>
-        <h2 id="php.2">Propósito e Uso Comum da Linguagem</h2>
+    <section >
+        <h2 id="php.2" >Propósito e Uso Comum da Linguagem</h2>
         <p>O PHP (Hypertext Preprocessor) é uma linguagem de programação usada para criar páginas da web dinâmicas e interativas. Seu propósito principal inclui:</p>
 
-        <ul>
+        <ul style="padding:20px 50px">
             <li>Geração de conteúdo dinâmico</li>
             <li>Manipulação de formulários</li>
             <li>Conexão com bancos de dados</li>
@@ -50,11 +60,11 @@
         <article>
             <h3>Condicional "if"</h3>
             <p>O condicional <code>if</code> é usado para executar um bloco de código se uma condição for verdadeira. Por exemplo:</p>
-            <pre><code class="php">
-                if ($idade >= 18) {
-                    echo "Você é um adulto.";
-                }
-            </code></pre>
+            <div class="php">
+                if ($idade >= 18) { <br>
+                    echo "Você é um adulto."; <br>
+                } <br>
+            </div>
         </article>
 
         <article>
@@ -65,19 +75,19 @@
         <article>
             <h3>"switch"</h3>
             <p>O <code>switch</code> é usado para selecionar entre várias alternativas com base no valor de uma expressão. Exemplo:</p>
-            <pre><code class="php">
-                $dia_da_semana = "quarta";
-                switch ($dia_da_semana) {
-                    case "segunda":
-                        echo "É segunda-feira.";
-                        break;
-                    case "quarta":
-                        echo "É quarta-feira.";
-                        break;
-                    default:
-                        echo "Outro dia da semana.";
-                }
-            </code></pre>
+            <div class="php">
+                $dia_da_semana = "quarta"; <br>
+                switch ($dia_da_semana) { <br>
+                    case "segunda": <br>
+                        echo "É segunda-feira."; <br>
+                        break; <br>
+                    case "quarta": <br>
+                        echo "É quarta-feira."; <br>
+                        break; <br>
+                    default: <br>
+                        echo "Outro dia da semana."; <br>
+                } <br>
+            </div>
         </article>
 
     </section>
@@ -88,23 +98,23 @@
         <article>
             <h3>Loop "for"</h3>
             <p>O loop <code>for</code> é usado para repetir um bloco de código um número específico de vezes. Por exemplo:</p>
-            <pre><code class="php">
-                for ($i = 0; $i < 5; $i++) {
-                    echo "Iteração $i &lt;br&gt;";
-                }
-            </code></pre>
+            <div class="php">
+                for ($i = 0; $i < 5; $i++) { <br>
+                    echo "Iteração $i &lt;br&gt;"; <br>
+                } <br>
+            </div>
         </article>
 
         <article>
             <h3>Loop "while"</h3>
             <p>O loop <code>while</code> executa um bloco de código enquanto uma condição for verdadeira. Por exemplo:</p>
-            <pre><code class="php">
-                $contador = 0;
-                while ($contador < 3) {
-                    echo "Contagem: $contador &lt;br&gt;";
-                    $contador++;
-                }
-            </code></pre>
+            <div class="php">
+                $contador = 0; <br>
+                while ($contador < 3) { <br>
+                    echo "Contagem: $contador &lt;br&gt;"; <br>
+                    $contador++; <br>
+                } <br>
+            </div>
         </article>
 
         <article>
@@ -121,11 +131,11 @@
             <h3>Definição e Chamada de Funções</h3>
             <p>Em PHP, funções são blocos de código reutilizáveis que realizam tarefas específicas.</p>
             <p>Para definir uma função, você usa a palavra-chave <code>function</code>. Por exemplo:</p>
-            <pre><code class="php">
-                function saudacao() {
-                    echo "Olá, mundo!";
-                }
-            </code></pre>
+            <div class="php">
+                function saudacao() { <br>
+                    echo "Olá, mundo!"; <br>
+                } <br>
+            </div>
             <p>Para chamar uma função, você a utiliza pelo nome seguido de parênteses. Exemplo: <code>saudacao();</code>.</p>
         </article>
 
@@ -136,17 +146,17 @@
         <article>
             <h3 id="php.8">Parâmetros e Valores de Retorno</h3>
             <p>Funções podem aceitar parâmetros, que são valores passados para a função. Por exemplo:</p>
-            <pre><code class="php">
-                function saudacao_nome($nome) {
-                    echo "Olá, $nome!";
-                }
-            </code></pre>
+            <div class="php">
+                function saudacao_nome($nome) { <br>
+                    echo "Olá, $nome!"; <br>
+                } <br>
+            </div>
             <p>As funções também podem retornar valores usando a palavra-chave <code>return</code>. Por exemplo:</p>
-            <pre><code class="php">
-                function soma($a, $b) {
-                    return $a + $b;
-                }
-            </code></pre>
+            <div class="php">
+                function soma($a, $b) { <br>
+                    return $a + $b; <br>
+                } <br>
+            </div>
         </article>
 
         <article>
@@ -169,14 +179,14 @@
 
         <article>
             <h3>Código PHP</h3>
-            <pre><code class="php">
-                function saudacao_nome($nome) {
-                    return "Olá, " . ucfirst($nome) . "!";
-                }
-
-                $nome = "maria";
-                echo saudacao_nome($nome);
-            </code></pre>
+            <div class="php">
+                function saudacao_nome($nome) { <br>
+                    return "Olá, " . ucfirst($nome) . "!"; <br>
+                } <br>
+                <br>
+                $nome = "maria"; <br>
+                echo saudacao_nome($nome); <br>
+            </div>
         </article>
 
         <article>
@@ -205,33 +215,33 @@
         <article>
             <h3>Arrays Indexados Numericamente</h3>
             <p>Os elementos são acessados por índices numéricos, começando por 0.</p>
-            <pre><code class="php">
-                $frutas = array("maçã", "banana", "laranja");
-                echo $frutas[1]; // Saída: banana
-            </code></pre>
+            <div class="php">
+                $frutas = array("maçã", "banana", "laranja"); <br>
+                echo $frutas[1]; // Saída: banana <br>
+            </div>
         </article>
 
         <article>
             <h3>Arrays Associativos</h3>
             <p>Os elementos são acessados por chaves associadas a valores.</p>
-            <pre><code class="php">
-                $pessoa = array("nome" => "João", "idade" => 30, "cidade" => "São Paulo");
-                echo $pessoa["idade"]; // Saída: 30
-            </code></pre>
+            <div class="php">
+                $pessoa = array("nome" => "João", "idade" => 30, "cidade" => "São Paulo"); <br>
+                echo $pessoa["idade"]; // Saída: 30 <br>
+            </div>
         </article>
 
         <article>
             <h3>Manipulação de Arrays</h3>
             <p>Para adicionar um elemento a um array, você pode usar <code>$array[] = valor</code>. Por exemplo:</p>
-            <pre><code class="php">
-                $numeros = array();
-                $numeros[] = 1;
-                $numeros[] = 2;
-            </code></pre>
+            <div class="php">
+                $numeros = array(); <br>
+                $numeros[] = 1; <br>
+                $numeros[] = 2; <br>
+            </div>
             <p>Para remover elementos de um array, você pode usar <code>unset($array[indice])</code>.</p>
-            <pre><code class="php">
-                unset($numeros[1]); // Remove o elemento de índice 1
-            </code></pre>
+            <div class="php">
+                unset($numeros[1]); <br> // Remove o elemento de índice 1
+            </div>
         </article>
 
     </section>
@@ -247,11 +257,11 @@
 
         <article>
             <h3>Exemplo de Uso de Funções de Array em PHP</h3>
-            <pre><code class="php">
-                $frutas = array("maçã", "banana", "laranja");
-                array_push($frutas, "uva");
-                unset($frutas[1]);
-            </code></pre>
+            <div class="php">
+                $frutas = array("maçã", "banana", "laranja"); <br>
+                array_push($frutas, "uva"); <br>
+                unset($frutas[1]); <br>
+            </div>
             <p>Neste exemplo, adicionamos "uva" ao array de frutas, e em seguida, removemos o elemento "banana" usando as funções de array.</p>
             <p>Essas funções de manipulação de strings e arrays em PHP são essenciais para lidar com dados e estruturas de texto e coleções em suas aplicações web.</p>
         </article>
@@ -270,10 +280,10 @@
                 <li><code>require</code>, por outro lado, gera um erro fatal (fatal error) se o arquivo não for encontrado ou se houver algum erro na inclusão. O script para de ser executado.</li>
             </ul>
             <p>Sintaxe:</p>
-            <pre><code class="php">
-                include 'arquivo.php';
-                require 'arquivo.php';
-            </code></pre>
+            <div class="php">
+                include 'arquivo.php'; <br>
+                require 'arquivo.php'; <br>
+            </div>
             <p>Use <code>include</code> quando quiser que o script continue a ser executado mesmo se o arquivo estiver ausente. Use <code>require</code> quando o arquivo é crítico e deve estar presente para o script funcionar corretamente.</p>
         </article>
 
@@ -292,14 +302,14 @@
             <h3>Implementação com spl_autoload_register</h3>
             <p>Para implementar o autoloading de classes, você pode usar a função <code>spl_autoload_register</code>. Ela registra uma função de autoload que é chamada sempre que uma classe é usada, mas ainda não está definida.</p>
             <p>Exemplo de autoloading de classes:</p>
-            <pre><code class="php">
-                spl_autoload_register(function ($class_name) {
-                    include $class_name . '.php';
-                });
-
-                // Agora, as classes são carregadas automaticamente quando são instanciadas.
-                $obj = new MinhaClasse();
-            </code></pre>
+            <div class="php">
+                spl_autoload_register(function ($class_name) { <br>
+                    include $class_name . '.php'; <br>
+                }); <br>
+ 
+                // Agora, as classes são carregadas automaticamente quando são instanciadas. <br>
+                $obj = new MinhaClasse(); <br>
+            </div>
             <p>A função de autoload recebe o nome da classe como parâmetro e carrega o arquivo com o mesmo nome da classe. Isso simplifica o gerenciamento de classes em projetos maiores, tornando o código mais organizado e legível.</p>
         </article>
 
@@ -318,20 +328,20 @@
             <h3 id="php.16">Definição de Classes e Objetos</h3>
             <p>A orientação a objetos é um paradigma de programação que organiza o código em torno de objetos, que são instâncias de classes. Classes definem a estrutura e o comportamento dos objetos, enquanto objetos são instâncias específicas de uma classe.</p>
             <p>Exemplo de definição de classe e criação de objeto em PHP:</p>
-            <pre><code class="php">
-                class Carro {
-                    public $marca;
-                    public $modelo;
+            <div class="php">
+                class Carro { <br>
+                    public $marca; <br>
+                    public $modelo; <br>
                     
-                    public function ligar() {
-                        echo "O carro está ligado.";
-                    }
-                }
+                    public function ligar() { <br>
+                        echo "O carro está ligado."; <br>
+                    } <br>
+                } <br>
 
-                $meuCarro = new Carro();
-                $meuCarro->marca = "Toyota";
-                $meuCarro->modelo = "Corolla";
-            </code></pre>
+                $meuCarro = new Carro(); <br>
+                $meuCarro->marca = "Toyota"; <br>
+                $meuCarro->modelo = "Corolla"; <br>
+            </div>
         </article>
 
         <article>
@@ -339,29 +349,29 @@
             <p>Herança é um conceito em que uma classe (subclasse) pode herdar propriedades e métodos de outra classe (superclasse). Isso permite a reutilização de código e a criação de hierarquias de classes.</p>
             <p>Polimorfismo refere-se à capacidade de objetos de diferentes classes responderem da mesma maneira a mensagens comuns. Isso simplifica o uso de objetos diferentes com interfaces semelhantes.</p>
             <p>Exemplo de herança e polimorfismo em PHP:</p>
-            <pre><code class="php">
-                class Animal {
-                    public function fazerSom() {
-                        echo "Algum som genérico.";
-                    }
-                }
-
-                class Cachorro extends Animal {
-                    public function fazerSom() {
-                        echo "Latir!";
-                    }
-                }
-
-                class Gato extends Animal {
-                    public function fazerSom() {
-                        echo "Miado!";
-                    }
-
-                }
-
-                $meuAnimal = new Cachorro();
-                $meuAnimal->fazerSom(); // "Latir!"
-            </code></pre>
+            <div class="php">
+                class Animal { <br>
+                    public function fazerSom() {<br>
+                        echo "Algum som genérico.";<br>
+                    }<br>
+                }<br>
+                <br>
+                class Cachorro extends Animal {<br>
+                    public function fazerSom() {<br>
+                        echo "Latir!";<br>
+                    }<br>
+                }<br>
+                <br>
+                class Gato extends Animal {<br>
+                    public function fazerSom() {<br>
+                        echo "Miado!";<br>
+                    }<br>
+                <br>
+                }<br>
+                <br>
+                $meuAnimal = new Cachorro();<br>
+                $meuAnimal->fazerSom(); // "Latir!"<br>
+            </div>
         </article>
 
     </section>
@@ -374,18 +384,18 @@
             <p>Os métodos mágicos em PHP são funções predefinidas em classes que são invocadas automaticamente em determinadas situações. Eles começam com dois underscores (por exemplo, <code>__construct()</code> ou <code>__toString()</code>).</p>
             <p>Um método mágico comum é o <code>__construct()</code>, que é chamado automaticamente quando um objeto é instanciado. Ele é usado para inicializar propriedades do objeto.</p>
             <p>Exemplo de método mágico <code>__construct()</code>:</p>
-            <pre><code class="php">
-                class Pessoa {
-                    public $nome;
-                    
-                    public function __construct($nome) {
-                        $this->nome = $nome;
-                    }
-                }
-
-                $pessoa = new Pessoa("João");
-                echo $pessoa->nome; // "João"
-            </code></pre>
+            <div class="php">
+                class Pessoa {<br>
+                    public $nome;<br>
+                    <br>
+                    public function __construct($nome) {<br>
+                        $this->nome = $nome;<br>
+                    }<br>
+                }<br>
+                <br>
+                $pessoa = new Pessoa("João");<br>
+                echo $pessoa->nome; // "João"<br>
+            </div>
             <p>Outros métodos mágicos, como <code>__toString()</code>, <code>__get()</code>, e <code>__set()</code>, permitem personalizar o comportamento de objetos em várias situações.</p>
         </article>
 
@@ -403,16 +413,16 @@
             <h3>Trabalhando com Bancos de Dados</h3>
             <p>PHP oferece suporte a vários sistemas de gerenciamento de banco de dados, como MySQL, PostgreSQL, SQLite, SQL Server e outros. Para se conectar a um banco de dados, você precisa utilizar extensões específicas ou bibliotecas compatíveis com o sistema de banco de dados escolhido.</p>
             <p>Exemplo de conexão a um banco de dados MySQL usando a extensão MySQLi em PHP:</p>
-            <pre><code class="php">
-                $servidor = "localhost";
-                $usuario = "root";
-                $senha = "senha";
-                $banco = "nome_do_banco";
-                $conexao = new mysqli($servidor, $usuario, $senha, $banco);
-                if ($conexao->connect_error) {
-                    die("Conexão falhou: " . $conexao->connect_error);
-                }
-            </code></pre>
+            <div class="php">
+                $servidor = "localhost";  <br>
+                $usuario = "root"; <br>
+                $senha = "senha"; <br>
+                $banco = "nome_do_banco"; <br>
+                $conexao = new mysqli($servidor, $usuario, $senha, $banco); <br>
+                if ($conexao->connect_error) { <br>
+                    die("Conexão falhou: " . $conexao->connect_error); <br>
+                } <br>
+            </div>
             <p>Após a conexão, você pode executar consultas SQL para recuperar ou manipular dados no banco de dados.</p>
         </article>
 

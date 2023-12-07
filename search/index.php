@@ -26,9 +26,9 @@
             </form>
             <div class="nav-redirect">
 
-                <a class="nav-item" href="">Sobre nós</a>
-                <a class="nav-item" href="">Sobre nós</a>
-                <a class="nav-item" href="">Sobre nós</a>
+                <a class="nav-item" href="../index.php">Sobre nós</a>
+                <a class="nav-item" href="../index.php">Sobre nós</a>
+                <a class="nav-item" href="../index.php">Sobre nós</a>
             </div>
             <div class="user-icon">
 
