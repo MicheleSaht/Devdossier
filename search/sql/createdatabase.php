@@ -3,11 +3,20 @@ include 'connection.php';
 
 $dbName = "DEVDOSSIER";
 
+$sql = "DROP DATABASE IF EXISTS $dbName";
+
+if ($conn->query($sql) === TRUE) {
+    echo "<script>console.log('Banco de dados criado com sucesso.')</script>";    
+} else {
+    die();
+}
+
 $sql = "CREATE DATABASE $dbName";
 
 if ($conn->query($sql) === TRUE) {
-    echo "<script>console.log('Banco de dados criado com sucesso.')</script>";
+    echo "<script>console.log('Banco de dados criado com sucesso.')</script>";    
 } else {
+    die();
 }
 
 $conn->select_db($dbName);

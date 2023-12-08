@@ -34,7 +34,7 @@ include "./sql/connection.php";
 
 $conn->select_db('DEVDOSSIER');
 
-$sql = "SELECT * FROM TITLE JOIN PAGE ON TITLE.COD_PAGE = PAGE.COD_PAGE WHERE TITLE_SEARCH LIKE '%$search%' OR NAME LIKE '%$search%'";
+$sql = "SELECT * FROM TITLE INNER JOIN PAGE ON TITLE.COD_PAGE = PAGE.COD_PAGE WHERE TITLE_SEARCH LIKE '%$search%' OR NAME LIKE '%$search%'";
 
 
 $result = mysqli_query($conn, $sql);
