@@ -18,7 +18,7 @@
             
             <form action="?" method="GET">
 
-                <input type="text" id="search-box" name="q" placeholder="Pesquisar" required/>
+                <input type="text" id="search-box" name="q" placeholder="Pesquisar" required autocomplete='off'/>
                 <button type="submit" id="search-button" value="Pesquisar"> <img src="../img/search.svg" alt=""></button>
 
             </form>

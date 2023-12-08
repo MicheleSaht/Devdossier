@@ -1,3 +1,6 @@
+<?php
+include './search/sql/createdatabase.php';
+?>
 <!DOCTYPE html>
 <html lang="PT-BR">
 
@@ -17,7 +20,7 @@
         <nav>       
             <form action="./search" method="get">
 
-                <input type="text" id="search-box" name="q" placeholder="Pesquisar" />
+                <input type="text" id="search-box" name="q" placeholder="Pesquisar" autocomplete='off' required/>
                 <button type="submit" id="search-button" value="Pesquisar"> <img src="./img/search.svg" alt=""></button>
 
             </form>
@@ -26,7 +29,7 @@
         <div class="container-itens">
             <a href="../Devdossier/linguagem/js.html">
                 <div class="container-item">
-                    <img src="./img/js.svg" alt="#" />
+                    <img src="./img/javascript.svg" alt="#" />
                     <span style="color: #EAFF67;">JavaScript</span>
                 </div>
             </a>

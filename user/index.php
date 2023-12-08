@@ -25,7 +25,7 @@ if (!isset($_SESSION['user'])) {
                 </svg></div>
             <form action="http://localhost/gitClone/Devdossier/search/" method="GET">
 
-                <input type="text" id="search-box" name="q" placeholder="Pesquisar" />
+                <input type="text" id="search-box" name="q" placeholder="Pesquisar" autocomplete='off' required/>
                 <button type="submit" id="search-button" value="Pesquisar"> <img src="./img/search.svg" alt=""></button>
 
             </form>
