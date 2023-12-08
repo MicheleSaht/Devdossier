@@ -82,3 +82,42 @@ h4 {
 .list-js-math li{
     padding-bottom: 9px;
 }
+@media (max-width:600px){
+    h1 {
+        font-size: 1.5rem;
+    }
+     h2 {
+        font-size: 1.3rem;
+    }
+    h3 {
+        font-size: 1.1rem;
+    }
+    p {
+        font-size: 0.7rem;
+    } 
+    .content-js {
+        width: 400px;
+    }
+}
+@media (max-width:516px) {
+    .content-js {
+        width: 300px;
+    }
+}
+@media (max-width:400px){
+    h1 {
+        font-size: 1.3rem;
+    }
+     h2 {
+        font-size: 1.1rem;
+    }
+    h3 {
+        font-size: 0.9rem;
+    }
+    p, li {
+        font-size: 0.6rem;
+    } 
+    .content-js {
+        width: 250px;
+    }
+}

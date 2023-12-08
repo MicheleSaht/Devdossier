@@ -10,31 +10,19 @@
 </head>
 
 <body>
+    
     <script src="./script.js"></script>
     <header>
-        <div class="header-circle"></div>
-        <nav>
-            <div class="nav-menu"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="36" height="36" viewBox="0 0 50 50" style="fill:#FFFFFF;">
-                <path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"></path>
-                </svg></div>
+        
+        <nav>       
             <form action="./search" method="get">
 
                 <input type="text" id="search-box" name="q" placeholder="Pesquisar" />
                 <button type="submit" id="search-button" value="Pesquisar"> <img src="./img/search.svg" alt=""></button>
 
             </form>
-            <div class="nav-redirect">
-
-                <a class="nav-item" href="">Home</a>
-                <a class="nav-item" href="">Sobre nós</a>
-                <a class="nav-item" href="">Sobre nós</a>
-            </div>
-            <div class="user-icon">
-
-            </div>
         </nav>
     </header>
-    <main>
         <div class="container-itens">
             <a href="../Devdossier/linguagem/js.html">
                 <div class="container-item">
@@ -98,20 +86,49 @@
             </a>
             
         </div>
-<!--         
-        <footer>
-            <div>
-                <p>&copy; 2023 DevDossier </p>
-            </div>
-            <div>
-                <ul>
-                    <li><a href="#">Desenvolvimento de Sistemas</a></li>
+        <!-- <footer>
+            <div class="cop">
+                <div>
+                    <p>&copy; 2023 DevDossier </p>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#">Desenvolvimento de Sistemas</a></li>
 
-                </ul>
+                    </ul>
+                </div>
             </div>
+                <div class="participantes">
+                    <div class="div1">
+                        <p>Marina Eduarda</p>
+                        <p>Mateus Henrique</p>
+                        <p>Matheus Silva</p>
+                        <p>Mayara Silva</p>
+                        <p>Michele Santos</p>
+                    </div>
+                    <div class="div2">
+                        <p>Miguel Araujo</p>
+                        <p>Mikael Crispim</p>
+                        <p>Murilo Torres</p>
+                        <p>Nathan Hiago</p>
+                        <p>Nicolas Epifanio</p>
+                    </div>
+                    <div class="div3">
+                        <p>Paulo Cesar</p>
+                        <p>Pedro Henrique</p>
+                        <p>Raissa Marinho</p>
+                        <p>Renam Andrade</p>
+                        <p>Tiego Faria</p>
+                    </div>
+                    <div class="div4">
+                        <p>Vinicius Custodio</p>
+                        <p>Vinicius Goi</p>
+                        <p>Vinicius Xarelli</p>
+                        <p>Vitor Hugo</p>
+                        <p>Vitória Oliveira</p>
+                    </div>
+                </div>
         </footer> -->
-    </main>
-
 </body>
 
 </html>

@@ -15,6 +15,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #1E1E1E;
     color: white;
+    overflow-x: hidden;
 }
 
 header {
@@ -36,20 +37,17 @@ header {
 nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 16px 18px 16px 18px;
-    /* nav cor */
-    /* background-color: #04030316;
-    position: absolute;
-    width: 100%; */
+    gap: 50px;
 }
 
 .nav-menu {
     width: 32px;
     height: 32px;
-    color: #ffffff;
-    display: flex;
+    color: #000;
+    display: none;
     justify-content: center;
     z-index: 1;
 }
@@ -75,8 +73,10 @@ input:hover {
 #search-box {
     background-color: #3A3838;
     border: none;
-    width: calc(100% - 74px);
-    padding: 16px 16px 16px 54px;
+    width: calc(100% - 70px);
+    height: 40px;
+    padding-left: 10px;
+    /* padding: 16px 16px 16px 54px; */
     font-size: 14px;
     border-radius: 10px;
     /* Opção d e estilo rs */
@@ -199,4 +199,101 @@ main {
 
 .container-itens a {
     text-decoration: none;
+}
+
+@media (max-width:850px){
+    
+    #search-box {
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (max-width:520px){
+    nav {
+        gap:40px;
+        justify-content: flex-start;
+        
+    }
+    #search-box {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width:390px){
+    #search-box {
+        width: 250px;
+    }
+}
+.teste {
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    bottom: 0;
+}
+/* Estilos para o footer */
+/* Estilos para o footer */
+footer {
+    width: 100%;
+    background-color: #333; /* Cor de fundo do rodapé */
+    color: white; /* Cor do texto do rodapé */
+    padding: 20px 0; /* Espaçamento interno do rodapé */
+    text-align: center; /* Alinhamento do texto do rodapé */
+    position: fixed; /* Fixa o rodapé na parte inferior da janela de visualização */
+    bottom: 0; /* Coloca o rodapé na parte inferior */
+    left: 0;
+    z-index: 999; /* Certifique-se de que o rodapé apareça acima do conteúdo */
+}
+
+.container-itens {
+    /* Adicione um espaço para o footer não sobrepor o conteúdo */
+    margin-bottom: 80px; /* Ajuste conforme necessário */
+}
+
+
+/* footer {
+    width: 100vw;
+    height: 300px;
+    background-color: #2D2C2D;
+     position: absolute;
+    bottom: 0; 
+    gap: 50px;
+    display: flex;
+    flex-direction:column-reverse;
+} */
+
+.cop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height:30px;
+    background-color: #7e797e;
+}
+footer p {
+    color:#fff;
+}
+ul {
+    list-style: none    ;
+}
+footer ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.cop {
+    gap: 20px;
+}
+.participantes {
+    width: 100vw;
+    height: inherit;
+    display: flex;
+    justify-content: space-around;
+}
+.div1, .div2, .div3, .div4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;    
 }
